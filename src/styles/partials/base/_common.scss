@@ -47,12 +47,11 @@
 
 .btn {
     display: inline-block;
-    background-color: rgba($color: #FF0000, $alpha: 0.8);
+    background-color: darkred;
+    border-radius: 15px;
     color: #fff;
     padding: 0.8rem 1.5rem;
-    border-radius: 3px;
     @include transition(background-color, 0.2s, ease-out);
-
     &:hover {
         background-color: var(--main-color);
     }
@@ -104,10 +103,6 @@
     border-top: 1px solid rgba($color: #666666, $alpha: 0.6);
 }
 
-.rating_star {
-    color: var(--main-color-2);
-    font-size: 0.9rem;
-}
 
 .tabs {
     @include flexbox(center, center);

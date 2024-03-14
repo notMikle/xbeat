@@ -13,13 +13,13 @@ const TopProducts = () => {
 
     // making a unique set of product's category
     const productsCategory = [
-        'All',
+        'Показать все',
         ...new Set(productsData.map(item => item.category))
     ];
 
     // handling product's filtering
     const handleProducts = (category, i) => {
-        if (category === 'All') {
+        if (category === 'Показать все') {
             setProducts(productsData);
             handleActive(i);
             return;
@@ -59,7 +59,7 @@ const TopProducts = () => {
                 }
                 <div className="card products_card browse_card">
                     <Link to="/all-products">
-                        Browse All <br /> Products <BsArrowRight />
+                        Показать все <br /> товары <BsArrowRight />
                     </Link>
                 </div>
             </div>

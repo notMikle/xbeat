@@ -18,6 +18,17 @@
     @include grid-cols(2, 0.4fr, 2rem);
     place-content: center;
     place-items: center;
+    //&::after {
+    //    content: "";
+    //    background-image: url("../../../../public/images/products/bg.jpg");
+    //    background-size: cover;
+    //    position: absolute;
+    //    top: 0px;
+    //    right: 0px;
+    //    bottom: 0px;
+    //    left: 0px;
+    //    opacity: 0.1;
+    //}
 
     &::before {
         @include pseudo($top: 10%);
@@ -35,7 +46,7 @@
     }
 
     &.hero_slide-0::before {
-        content: "Over Ear";
+        content: "Shampoo";
     }
 
     &.hero_slide-1::before {

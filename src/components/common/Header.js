@@ -6,6 +6,7 @@ import commonContext from '../../contexts/common/commonContext';
 import cartContext from '../../contexts/cart/cartContext';
 import AccountForm from '../form/AccountForm';
 import SearchBar from './SearchBar';
+import styled from "styled-components";
 
 
 const Header = () => {
@@ -36,19 +37,19 @@ const Header = () => {
                 <div className="container">
                     <div className="navbar">
                         <h2 className="nav_logo">
-                            <Link to="/">X-Beat</Link>
+                            <Link to="/">Lika Bandito</Link>
                         </h2>
                         <nav className="nav_actions">
                             <div className="search_action">
                                 <span onClick={() => toggleSearch(true)}>
-                                    <AiOutlineSearch />
+                                    <AiOutlineSearch/>
                                 </span>
                                 <div className="tooltip">Search</div>
                             </div>
 
                             <div className="cart_action">
                                 <Link to="/cart">
-                                    <AiOutlineShoppingCart />
+                                    <AiOutlineShoppingCart/>
                                     {
                                         cartQuantity > 0 && (
                                             <span className="badge">{cartQuantity}</span>
@@ -60,7 +61,7 @@ const Header = () => {
 
                             <div className="user_action">
                                 <span>
-                                    <AiOutlineUser />
+                                    <AiOutlineUser/>
                                 </span>
                                 <div className="dropdown_menu">
                                     <h4>Hello! {formUserInfo && <Link to="*">&nbsp;{formUserInfo}</Link>}</h4>
@@ -79,7 +80,7 @@ const Header = () => {
                                     <ul>
                                         {
                                             dropdownMenu.map(item => {
-                                                const { id, link, path } = item;
+                                                const {id, link, path} = item;
                                                 return (
                                                     <li key={id}>
                                                         <Link to={path}>{link}</Link>
@@ -90,15 +91,22 @@ const Header = () => {
                                     </ul>
                                 </div>
                             </div>
+                            <div>
+                                <Call>
+                                    8-800-555-35-35
+                                </Call>
+                            </div>
                         </nav>
                     </div>
                 </div>
             </header>
-
-            <SearchBar />
-            <AccountForm />
+            <SearchBar/>
+            <AccountForm/>
         </>
     );
 };
 
 export default Header;
+const Call = styled.small`
+font-size: 15px;
+`

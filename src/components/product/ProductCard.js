@@ -39,11 +39,6 @@ const ProductCard = (props) => {
                     </Link>
                 </figure>
                 <div className="products_details">
-                    <span className="rating_star">
-                        {
-                            [...Array(rateCount)].map((_, i) => <IoMdStar key={i} />)
-                        }
-                    </span>
                     <h3 className="products_title">
                         <Link to={`${path}${id}`}>{title}</Link>
                     </h3>

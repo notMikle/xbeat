@@ -22,20 +22,20 @@ const Footer = () => {
                 <div className="wrapper footer_wrapper">
                     <div className="foot_about">
                         <h2>
-                            <Link to="/">X-Beat</Link>
+                            <Link to="/">Bandito - seniorito</Link>
                         </h2>
                         <div className="foot_subs">
-                            <p>Subscribe to our Email alerts to receive early discount offers, and new products info.</p>
+                            <p>Напишите нам и мы ответим вам наверное</p>
                             <form onSubmit={handleSubmit}>
                                 <input
                                     type="email"
                                     className="input_field"
-                                    placeholder="Email Address*"
+                                    placeholder="Почту сюда*"
                                     required
                                     value={subValue}
                                     onChange={(e) => setSubValue(e.target.value)}
                                 />
-                                <button type="submit" className="btn">Subscribe</button>
+                                <button type="submit" className="btn">Отправить</button>
                             </form>
                         </div>
                     </div>
@@ -72,8 +72,7 @@ const Footer = () => {
                     <div className="sub_footer_wrapper">
                         <div className="foot_copyright">
                             <p>
-                                {currYear} | XBeat. All Rights Reserved.
-                                Built by | <a href="https://gulshansongara.netlify.app/">Gulshan Songara</a>
+                                {currYear} | Лика - бандито
                             </p>
                         </div>
                         <div className="foot_social">

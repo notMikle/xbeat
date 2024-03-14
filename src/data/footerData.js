@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 export const footMenu = [
     {
         id: 1,
-        title: "Help",
+        title: "Помощь",
         menu: [
             {
                 id: 1,
@@ -12,84 +12,54 @@ export const footMenu = [
             },
             {
                 id: 2,
-                link: "Track Order",
+                link: "Трэк номер",
                 path: "/"
             },
             {
                 id: 3,
-                link: "Cancel Order",
+                link: "Отменить заказ",
                 path: "/"
             },
             {
                 id: 4,
-                link: "Return Order",
+                link: "Вернуть товар",
                 path: "/"
             },
             {
                 id: 5,
-                link: "Warranty Info",
+                link: "Еще что нибудь",
                 path: "/"
             },
         ]
     },
-    {
-        id: 2,
-        title: "Policies",
-        menu: [
-            {
-                id: 1,
-                link: "Return Policy",
-                path: "/"
-            },
-            {
-                id: 2,
-                link: "Security",
-                path: "/"
-            },
-            {
-                id: 3,
-                link: "Sitemap",
-                path: "/"
-            },
-            {
-                id: 4,
-                link: "Privacy Policy",
-                path: "/"
-            },
-            {
-                id: 5,
-                link: "Terms & Conditions",
-                path: "/"
-            },
-        ]
-    },
+
     {
         id: 3,
         title: "Company",
         menu: [
             {
                 id: 1,
-                link: "About Us",
+                link: "О нас",
                 path: "/"
             },
             {
                 id: 2,
-                link: "Contact Us",
+                link: "Контакты",
                 path: "/"
             },
             {
                 id: 3,
-                link: "Service Centres",
+                link: "Ватсап",
                 path: "/"
             },
             {
                 id: 4,
-                link: "Careers",
+                link: "Телеграм",
                 path: "/"
             },
             {
                 id: 5,
-                link: "Affiliates",
+                link: "Инстаграм",
                 path: "/"
             },
         ]
