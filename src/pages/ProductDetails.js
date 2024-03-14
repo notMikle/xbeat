@@ -93,15 +93,7 @@ const ProductDetails = () => {
                             <h1 className="prod_details_title">{title}</h1>
                             <h4 className="prod_details_info">{info}</h4>
 
-                            <div className="prod_details_ratings">
-                                <span className="rating_star">
-                                    {
-                                        [...Array(rateCount)].map((_, i) => <IoMdStar key={i} />)
-                                    }
-                                </span>
-                                <span>|</span>
-                                <Link to="*">{ratings} Ratings</Link>
-                            </div>
+
 
                             <div className="separator"></div>
 
@@ -111,26 +103,17 @@ const ProductDetails = () => {
                                         {newPrice} &nbsp;
                                         <small className="del_price"><del>{oldPrice}</del></small>
                                     </h2>
-                                    <p className="saved_price">You save: {savedPrice} ({savedDiscount}%)</p>
-                                    <span className="tax_txt">(Inclusive of all taxes)</span>
+                                    {/*<p className="saved_price">You save: {savedPrice} ({savedDiscount}%)</p>*/}
+                                    {/*<span className="tax_txt">(Inclusive of all taxes)</span>*/}
                                 </div>
+
+
 
                                 <div className="badge">
-                                    <span><IoMdCheckmark /> In Stock</span>
+                                    <span><IoMdCheckmark />В наличии</span>
                                 </div>
                             </div>
 
-                            <div className="separator"></div>
-
-                            <div className="prod_details_offers">
-                                <h4>Offers and Discounts</h4>
-                                <ul>
-                                    <li>No Cost EMI on Credit Card</li>
-                                    <li>Pay Later & Avail Cashback</li>
-                                </ul>
-                            </div>
-
-                            <div className="separator"></div>
 
                             <div className="prod_details_buy_btn">
                                 <button
@@ -138,7 +121,7 @@ const ProductDetails = () => {
                                     className="btn"
                                     onClick={handleAddItem}
                                 >
-                                    Add to cart
+                                    Добавить в корзину
                                 </button>
                             </div>
 

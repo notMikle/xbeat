@@ -8,12 +8,11 @@ const Services = () => {
     <>
       <section id="services" className="section">
         <div className="container">
-          <SectionsHead heading="Our Advantages" />
+          {/*<SectionsHead heading="Our Advantages" />*/}
           <div className="wrapper services_wrapper">
             {
               servicesData.map((item) => {
                 const { id, icon, title, info } = item;
-
                 return (
                   <div className="services_card" key={id}>
                     <div className="services_icon">{icon}</div>
