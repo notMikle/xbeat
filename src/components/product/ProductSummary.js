@@ -23,20 +23,20 @@ const ProductSummary = (props) => {
                                 className={`tabs_item ${activeClass('specs')}`}
                                 onClick={() => handleActive('specs')}
                             >
-                                Specifications
+                                О продукте
                             </li>
                             <li
                                 className={`tabs_item ${activeClass('overview')}`}
                                 onClick={() => handleActive('overview')}
                             >
-                                Overview
+                                Что-то написать
                             </li>
-                            <li
-                                className={`tabs_item ${activeClass('reviews')}`}
-                                onClick={() => handleActive('reviews')}
-                            >
-                                Reviews
-                            </li>
+                            {/*<li*/}
+                            {/*    className={`tabs_item ${activeClass('reviews')}`}*/}
+                            {/*    onClick={() => handleActive('reviews')}*/}
+                            {/*>*/}
+                            {/*    Reviews*/}
+                            {/*</li>*/}
                         </ul>
                     </div>
 
@@ -47,53 +47,43 @@ const ProductSummary = (props) => {
                                 <div className="prod_specs">
                                     <ul>
                                         <li>
-                                            <span>Brand</span>
+                                            <span>Брэнд</span>
                                             <span>{brand}</span>
                                         </li>
                                         <li>
-                                            <span>Model</span>
+                                            <span>Название</span>
                                             <span>{title}</span>
                                         </li>
                                         <li>
-                                            <span>Generic Name</span>
+                                            <span>Категория</span>
                                             <span>{category}</span>
                                         </li>
                                         <li>
-                                            <span>Headphone Type</span>
+                                            <span>Тип</span>
                                             <span>{type}</span>
                                         </li>
-                                        <li>
-                                            <span>Connectivity</span>
-                                            <span>{connectivity}</span>
-                                        </li>
-                                        <li>
-                                            <span>Microphone</span>
-                                            <span>Yes</span>
-                                        </li>
+                                        {/*<li>*/}
+                                        {/*    <span>Описание</span>*/}
+                                        {/*    <span>{info}</span>*/}
+                                        {/*</li>*/}
+                                        <div className="prod_overview">
+                                            <span>{info}</span>
+                                        </div>
                                     </ul>
                                 </div>
                             ) : active === 'overview' ? (
                                 <div className="prod_overview">
                                     <h3>The <span>{title}</span> {info} provides with fabulous sound quality</h3>
                                     <ul>
-                                        <li>Sound Tuned to Perfection</li>
-                                        <li>Comfortable to Wear</li>
-                                        <li>Long Hours Playback Time</li>
+                                        <li>Товар супер</li>
+                                        <li>Доставка быстрая</li>
+                                        <li>Не будешь чушпаном</li>
                                     </ul>
                                     <p>Buy the <b>{title} {info}</b> which offers you with fabulous music experience by providing you with awesome sound quality that you can never move on from. Enjoy perfect flexibility and mobility with amazing musical quality with these {category} giving you a truly awesome audio experience. It blends with exceptional sound quality and a range of smart features for an unrivalled listening experience.</p>
                                 </div>
                             ) : (
                                 <div className="prod_reviews">
-                                    <ul>
-                                        {
-                                            reviewsData.map(item => (
-                                                <ProductReviews
-                                                    key={item.id}
-                                                    {...item}
-                                                />
-                                            ))
-                                        }
-                                    </ul>
+
                                 </div>
                             )
 

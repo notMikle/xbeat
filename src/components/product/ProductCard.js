@@ -8,7 +8,7 @@ import useActive from '../../hooks/useActive';
 
 const ProductCard = (props) => {
 
-    const { id, images, title, info, finalPrice, originalPrice, rateCount, path } = props;
+    const { id, images, title, info, finalPrice, originalPrice, path } = props;
 
     const { addItem } = useContext(cartContext);
     const { active, handleActive, activeClass } = useActive(false);
@@ -45,7 +45,7 @@ const ProductCard = (props) => {
                     <h5 className="products_info">{info}</h5>
                     <div className="separator"></div>
                     <h2 className="products_price">
-                        {newPrice} &nbsp;
+                        {newPrice}
                         <small><del>{oldPrice}</del></small>
                     </h2>
                     <button
@@ -53,7 +53,7 @@ const ProductCard = (props) => {
                         className={`btn products_btn ${activeClass(id)}`}
                         onClick={handleAddItem}
                     >
-                        {active ? 'Added' : 'Add to cart'}
+                        {active ? 'Добавлено' : 'В корзину'}
                     </button>
                 </div>
             </div>

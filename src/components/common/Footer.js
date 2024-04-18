@@ -22,15 +22,23 @@ const Footer = () => {
                 <div className="wrapper footer_wrapper">
                     <div className="foot_about">
                         <h2>
-                            <Link to="/">Bandito - seniorito</Link>
+                            <Link to="/">Bandido Barbershop</Link>
                         </h2>
                         <div className="foot_subs">
-                            <p>Напишите нам и мы ответим вам наверное</p>
+                            <p>Напишите нам и мы вас проконсультируем</p>
                             <form onSubmit={handleSubmit}>
+                                <input
+                                    type="text"
+                                    className="input_field"
+                                    placeholder="Имя"
+                                    required
+                                    value={subValue}
+                                    onChange={(e) => setSubValue(e.target.value)}
+                                />
                                 <input
                                     type="email"
                                     className="input_field"
-                                    placeholder="Почту сюда*"
+                                    placeholder="Номер телефона"
                                     required
                                     value={subValue}
                                     onChange={(e) => setSubValue(e.target.value)}

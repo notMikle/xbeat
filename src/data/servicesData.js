@@ -1,29 +1,30 @@
-import {FaShippingFast, FaShieldAlt, FaTags, FaCreditCard} from 'react-icons/fa';
+import {FaShippingFast, FaShieldAlt, FaUser, FaCreditCard, FaHome } from 'react-icons/fa';
 
 const servicesData = [
     {
         id: 1,
-        icon: <FaShippingFast />,
-        title: "Доставка быстрая как самолет",
-        info: "24 часа",
-    },
-    {
-        id: 2,
-        icon: <FaShieldAlt />,
-        title: "100 процентов оригинал",
-        info: "турки говорят",
+        icon: <FaShippingFast color={"#a61c00"} />,
+        title: "Быстрая доставка",
+        info: "Почтой России или СДЭК",
     },
     {
         id: 3,
-        icon: <FaTags />,
-        title: "Баночки наши - деньги ваши",
-        info: "зуб даю",
+        icon: <FaHome color={"#a61c00"} />,
+        title: "г.Белгород",
+        info: "Самовывоз или доставка бесплатно",
     },
     {
+        id: 2,
+        icon: <FaShieldAlt color={"#a61c00"}  />,
+        title: "Оригинальная продукция",
+        info: "Мы являемся официальным представителем Bandido",
+    },
+
+    {
         id: 4,
-        icon: <FaCreditCard />,
-        title: "Не спиздим 100%",
-        info: "отвечаю",
+        icon: <FaUser color={"#a61c00"}/>,
+        title: "Индивидуальный подход",
+        info: "Мы ценим наших клиентов и ориентируемся на долгосрочное сотрудничество",
     },
 ];
 

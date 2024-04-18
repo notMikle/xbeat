@@ -26,6 +26,9 @@
 }
 
 .foot_subs {
+    input{
+        margin-top: 15px;
+    }
     p {
         @include margin-y(1rem, 1rem);
         font-size: 0.875rem;

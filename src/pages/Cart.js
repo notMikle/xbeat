@@ -5,6 +5,7 @@ import useDocTitle from '../hooks/useDocTitle';
 import cartContext from '../contexts/cart/cartContext';
 import CartItem from '../components/cart/CartItem';
 import EmptyView from '../components/common/EmptyView';
+import {Form} from "../contexts/form";
 
 
 const Cart = () => {
@@ -66,29 +67,30 @@ const Cart = () => {
                                 <div className="cart_right_col">
                                     <div className="order_summary">
                                         <h3>
-                                            Order Summary &nbsp;
-                                            ( {cartQuantity} {cartQuantity > 1 ? 'items' : 'item'} )
+                                            В корзине &nbsp;
+                                            ( {cartQuantity} {cartQuantity > 1 ? 'товаров' : 'товар'} )
                                         </h3>
                                         <div className="order_summary_details">
                                             <div className="price">
-                                                <span>Original Price</span>
+                                                <span>Стоимость</span>
                                                 <b>{displayCartTotal}</b>
                                             </div>
                                             <div className="discount">
-                                                <span>Discount</span>
+                                                <span>Скидка</span>
                                                 <b>- {displayCartDiscount}</b>
                                             </div>
                                             <div className="delivery">
-                                                <span>Delivery</span>
-                                                <b>Free</b>
+                                                <span>Доставка</span>
+                                                <b>бесплатно</b>
                                             </div>
                                             <div className="separator"></div>
                                             <div className="total_price">
-                                                <b><small>Total Price</small></b>
+                                                <b><small>Всего</small></b>
                                                 <b>{displayTotalAmount}</b>
                                             </div>
                                         </div>
-                                        <button type="button" className="btn checkout_btn">Checkout</button>
+                                        <button type="button" className="btn checkout_btn">Заказать</button>
+                                        <Form></Form>
                                     </div>
                                 </div>
                             </div>

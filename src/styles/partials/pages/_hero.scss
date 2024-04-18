@@ -1,39 +1,30 @@
 #hero {
+    position: relative;
+    //background-color: var(--bg-color);
     min-height: 100vh;
     @include centered;
 
     .swiper {
         @include dimension(100%, 100%);
         @include padding-x(0.75rem, 0.75rem);
-        @include padding-y(5rem, 5rem);
+        @include padding-y(2rem, 2rem);
     }
 
     .swiper-pagination {
-        bottom: 30px;
+        bottom: 40px;
     }
 }
 
 .hero_wrapper {
     position: relative;
-    @include grid-cols(2, 0.4fr, 2rem);
+    @include grid-cols(2, 0.5fr, 2rem);
     place-content: center;
     place-items: center;
-    //&::after {
-    //    content: "";
-    //    background-image: url("../../../../public/images/products/bg.jpg");
-    //    background-size: cover;
-    //    position: absolute;
-    //    top: 0px;
-    //    right: 0px;
-    //    bottom: 0px;
-    //    left: 0px;
-    //    opacity: 0.1;
-    //}
 
     &::before {
         @include pseudo($top: 10%);
-        font-size: 15rem;
-        font-weight: 700;
+        font-size: 10rem;
+        font-weight: 800;
         opacity: 0.05;
 
         @include devices(xl) {
@@ -46,15 +37,15 @@
     }
 
     &.hero_slide-0::before {
-        content: "Shampoo";
+        content: "Лосьон после бритья";
     }
 
     &.hero_slide-1::before {
-        content: "In Ear";
+        content: "Стайлер для бороды";
     }
 
     &.hero_slide-2::before {
-        content: "Over Ear";
+        content: "Шампунь для волос";
     }
 
     @include devices(lg) {
@@ -71,6 +62,7 @@
 .hero_item_txt,
 .hero_item_img {
     position: relative;
+    width: 80%;
 }
 
 .hero_item_txt {
@@ -126,7 +118,7 @@
     }
 
     @include devices(sm) {
-        max-width: 18rem;
+        max-width: 20rem;
         width: 75%;
     }
 }

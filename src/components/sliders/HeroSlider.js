@@ -19,18 +19,18 @@ const HeroSlider = () => {
         <Swiper
             modules={[Pagination, A11y, Autoplay]}
             loop={true}
-            speed={400}
+            speed={700}
             spaceBetween={100}
             slidesPerView={1}
             pagination={{ clickable: true }}
             autoplay={{
-                delay: 4000,
+                delay: 6000,
                 disableOnInteraction: false,
             }}
         >
             {
                 heroProducts.map((item, i) => {
-                    const { id, title, tagline, heroImage, finalPrice, originalPrice, path } = item;
+                    const { info, id, title, tagline, heroImage, finalPrice, originalPrice, path } = item;
                     const newPrice = displayMoney(finalPrice);
                     const oldPrice = displayMoney(originalPrice);
 
@@ -42,6 +42,7 @@ const HeroSlider = () => {
                             <div className="hero_item_txt">
                                 <h3>{title}</h3>
                                 <h1>{tagline}</h1>
+                                <span>{info}</span>
                                 <h2 className="hero_price">
                                     {newPrice} &nbsp;
                                     <small><del>{oldPrice}</del></small>

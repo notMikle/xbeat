@@ -50,7 +50,7 @@ const TopProducts = () => {
             </div>
             <div className="wrapper products_wrapper">
                 {
-                    products.slice(0, 11).map(item => (
+                    products.slice(0, 19).map(item => (
                         <ProductCard
                             key={item.id}
                             {...item}

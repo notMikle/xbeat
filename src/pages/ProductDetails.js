@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { IoMdStar, IoMdCheckmark } from 'react-icons/io';
-import { calculateDiscount, displayMoney } from '../helpers/utils';
+import React, {useContext, useEffect, useState} from 'react';
+import {Link, useParams} from 'react-router-dom';
+import {IoMdStar, IoMdCheckmark} from 'react-icons/io';
+import {calculateDiscount, displayMoney} from '../helpers/utils';
 import useDocTitle from '../hooks/useDocTitle';
 import useActive from '../hooks/useActive';
 import cartContext from '../contexts/cart/cartContext';
@@ -16,11 +16,11 @@ const ProductDetails = () => {
 
     useDocTitle('Product Details');
 
-    const { handleActive, activeClass } = useActive(0);
+    const {handleActive, activeClass} = useActive(0);
 
-    const { addItem } = useContext(cartContext);
+    const {addItem} = useContext(cartContext);
 
-    const { productId } = useParams();
+    const {productId} = useParams();
 
     // here the 'id' received has 'string-type', so converting it to a 'Number'
     const prodId = parseInt(productId);
@@ -28,7 +28,7 @@ const ProductDetails = () => {
     // showing the Product based on the received 'id'
     const product = productsData.find(item => item.id === prodId);
 
-    const { images, title, info, category, finalPrice, originalPrice, ratings, rateCount } = product;
+    const {images, title, info, category, finalPrice, originalPrice, optPrice, quantity, size} = product;
 
     const [previewImg, setPreviewImg] = useState(images[0]);
 
@@ -55,11 +55,11 @@ const ProductDetails = () => {
 
 
     // calculating Prices
-    const discountedPrice = originalPrice - finalPrice;
+    const discountedPrice = finalPrice - optPrice;
     const newPrice = displayMoney(finalPrice);
     const oldPrice = displayMoney(originalPrice);
-    const savedPrice = displayMoney(discountedPrice);
-    const savedDiscount = calculateDiscount(discountedPrice, originalPrice);
+    const optovikPrice = displayMoney(optPrice);
+    const savedDiscount = calculateDiscount(discountedPrice, finalPrice);
 
 
     return (
@@ -78,20 +78,24 @@ const ProductDetails = () => {
                                             className={`tabs_item ${activeClass(i)}`}
                                             onClick={() => handlePreviewImg(i)}
                                         >
-                                            <img src={img} alt="product-img" />
+                                            <img src={img} alt="product-img"/>
                                         </div>
                                     ))
                                 }
                             </div>
-                            <figure className="prod_details_img">
-                                <img src={previewImg} alt="product-img" />
-                            </figure>
+                            <div className="prod_details_img">
+                                <img src={previewImg} alt="product-img"/>
+                            </div>
                         </div>
 
                         {/*=== Product Details Right-content ===*/}
                         <div className="prod_details_right_col">
                             <h1 className="prod_details_title">{title}</h1>
                             <h4 className="prod_details_info">{info}</h4>
+                            <div className='flexis'> <h4 className="prod_details_info">Объем: {size}</h4>
+                                <div className="badges">
+                                    <span><IoMdCheckmark/>В наличии</span>
+                                </div></div>
 
 
 
@@ -101,17 +105,16 @@ const ProductDetails = () => {
                                 <div className="price_box">
                                     <h2 className="price">
                                         {newPrice} &nbsp;
-                                        <small className="del_price"><del>{oldPrice}</del></small>
+                                        <small className="del_price">
+                                            <del>{oldPrice}</del>
+                                        </small>
                                     </h2>
-                                    {/*<p className="saved_price">You save: {savedPrice} ({savedDiscount}%)</p>*/}
-                                    {/*<span className="tax_txt">(Inclusive of all taxes)</span>*/}
+                                    <p className="saved_price">При заказе от 1 уп. цена за
+                                        шт: {optovikPrice} (Скидка:{savedDiscount}%)</p>
+                                    <span className="tax_txt">(Упаковка: {quantity} шт)</span>
                                 </div>
 
 
-
-                                <div className="badge">
-                                    <span><IoMdCheckmark />В наличии</span>
-                                </div>
                             </div>
 
 
@@ -134,12 +137,12 @@ const ProductDetails = () => {
 
             <section id="related_products" className="section">
                 <div className="container">
-                    <SectionsHead heading="Related Products" />
-                    <RelatedSlider category={category} />
+                    <SectionsHead heading="Related Products"/>
+                    <RelatedSlider category={category}/>
                 </div>
             </section>
 
-            <Services />
+            <Services/>
         </>
     );
 };

@@ -33,7 +33,7 @@ const CartItem = (props) => {
                             <span onClick={() => removeItem(id)}>
                                 <TbTrash />
                             </span>
-                            <div className="tooltip">Remove Item</div>
+                            <div className="tooltip">Удалить</div>
                         </div>
                     </div>
 

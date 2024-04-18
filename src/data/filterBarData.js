@@ -1,30 +1,30 @@
 export const sortMenu = [
     {
         id: 1,
-        title: "Latest",
+        title: "Скидки",
     },
     {
         id: 2,
-        title: "Featured",
+        title: "Новинки",
     },
     {
         id: 3,
-        title: "Top Rated",
+        title: "Топ",
     },
     {
         id: 4,
-        title: "Price(Lowest First)",
+        title: "Цена(ниже)",
     },
     {
         id: 5,
-        title: "Price(Highest First)"
+        title: "Цена(выше)"
     },
 ];
 
 export const brandsMenu = [
     {
         id: 1,
-        label: "JBL",
+        label: "Bandido",
         checked: false,
     },
     {
@@ -42,22 +42,27 @@ export const brandsMenu = [
 export const categoryMenu = [
     {
         id: 1,
-        label: "Headphones",
+        label: "Шампунь для волос",
         checked: false,
     },
     {
         id: 2,
-        label: "Earbuds",
+        label: "Шампунь для бороды",
         checked: false,
     },
     {
         id: 3,
-        label: "Earphones",
+        label: "Гель после бритья",
         checked: false,
     },
     {
         id: 4,
-        label: "Neckbands",
+        label: "Для укладки",
+        checked: false,
+    },
+    {
+        id: 5,
+        label: "Тоник",
         checked: false,
     },
 ];

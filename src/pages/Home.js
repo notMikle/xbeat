@@ -10,20 +10,20 @@ const Home = () => {
 
     return (
         <main>
-            <section id="hero">
+            <section id="hero" className='herohero'>
                 <HeroSlider />
             </section>
 
-            <section id="featured" className="section">
-                <div className="container">
-                    <SectionsHead heading="Featured Products" />
-                    <FeaturedSlider />
-                </div>
-            </section>
+            {/*<section id="featured" className="section">*/}
+            {/*    <div className="container">*/}
+            {/*        <SectionsHead heading="Популярные товары" />*/}
+            {/*        <FeaturedSlider />*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
             <section id="products" className="section">
                 <div className="container">
-                    <SectionsHead heading="Топ товаров" />
+                    <SectionsHead heading="Каталог" />
                     <TopProducts />
                 </div>
             </section>
