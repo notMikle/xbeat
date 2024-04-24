@@ -36,17 +36,21 @@
         }
     }
 
-    &.hero_slide-0::before {
-        content: "Лосьон после бритья";
-    }
+    @media screen and (min-width: 768px) {
+        &.hero_slide-0::before {
+            content: "Лосьон после бритья";
+        }
 
-    &.hero_slide-1::before {
-        content: "Стайлер для бороды";
-    }
+        &.hero_slide-1::before {
+            content: "Стайлер для бороды";
+        }
 
-    &.hero_slide-2::before {
-        content: "Шампунь для волос";
-    }
+        &.hero_slide-2::before {
+            content: "Шампунь для волос";
+        }
+        }
+
+
 
     @include devices(lg) {
         grid-template-columns: 0.7fr;
