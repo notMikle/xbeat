@@ -22,6 +22,7 @@ const productsData = [
         images: [
             "/images/products/hairConditioner2.png",
             "/images/products/hairConditioner2.png",
+            "/images/products/hairConditioner2.png",
         ],
         brand: "TWO PHASE HAIR CONDITIONER KERATIN",
         title: "TWO PHASE HAIR CONDITIONER KERATIN",
