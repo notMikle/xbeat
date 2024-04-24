@@ -22,9 +22,7 @@ const Header = () => {
         window.addEventListener('resize', handleWindowResize)
         return () => window.removeEventListener('resize', handleWindowResize)
     }, [])
-
-
-
+    
     return (
         <>
             {width < breakpoint ?  <MobileMenu/>: <DesktopMenu/>}

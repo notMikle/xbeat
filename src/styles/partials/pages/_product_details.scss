@@ -24,15 +24,16 @@
 }
 
 .prod_details_tabs {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
+    //display: flex;
+    //gap: 30px;
+    //flex-direction: column;
 
     .tabs_item {
         @include dimension(6rem, 6rem);
         @include bordered(2px, rgba($color: #ffffff, $alpha: 0.2));
         border-radius: 3px;
         padding: 0.5rem;
+        margin: 10px;
         cursor: pointer;
         @include transition(border-color, 0.2s);
 

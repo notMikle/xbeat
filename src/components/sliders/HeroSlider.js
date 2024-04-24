@@ -13,8 +13,6 @@ import 'swiper/scss/pagination';
 const HeroSlider = () => {
 
     const heroProducts = productsData.filter(item => item.tag === 'hero-product');
-
-
     return (
         <Swiper
             modules={[Pagination, A11y, Autoplay]}
