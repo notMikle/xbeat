@@ -79,7 +79,8 @@ const ProductSummary = (props) => {
                                         <li>Доставка быстрая</li>
                                         <li>Не будешь чушпаном</li>
                                     </ul>
-                                    <p>Buy the <b>{title} {info}</b> which offers you with fabulous music experience by providing you with awesome sound quality that you can never move on from. Enjoy perfect flexibility and mobility with amazing musical quality with these {category} giving you a truly awesome audio experience. It blends with exceptional sound quality and a range of smart features for an unrivalled listening experience.</p>
+                                    <p>Купи<b>{title} {info}</b> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eos facilis illum inventore laudantium natus odit officia pariatur. Aperiam commodi dignissimos ex nisi officia placeat quaerat quas saepe suscipit voluptate?</span>
+                                    </p>
                                 </div>
                             ) : (
                                 <div className="prod_reviews">
