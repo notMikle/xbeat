@@ -3,6 +3,8 @@ const productsData = [
         id: 98,
         images: [
             "/images/products/hairConditioner3.png",
+            "/images/products/hairConditioner3.png",
+            "/images/products/hairConditioner3.png",
         ],
         brand: "TWO PHASE HAIR CONDITIONER HERBAL",
         title: "TWO PHASE HAIR CONDITIONER HERBAL",
@@ -40,6 +42,8 @@ const productsData = [
         id: 100,
         images: [
             "/images/products/hairConditionerArgan.png",
+            "/images/products/hairConditionerArgan.png",
+            "/images/products/hairConditionerArgan.png",
         ],
         brand: "TWO PHASE HAIR CONDITIONER ARGAN",
         title: "TWO PHASE HAIR CONDITIONER ARGAN",
@@ -57,6 +61,7 @@ const productsData = [
         id: 101,
         images: [
             "/images/products/MatteWax.png",
+            "/images/products/MatteWax2.png",
             "/images/products/MatteWax2.png",
         ],
         brand: "MATTE WAX",
@@ -77,6 +82,8 @@ const productsData = [
         id: 102,
         images: [
             "/images/products/FiberWax.png",
+            "/images/products/FiberWax.png",
+            "/images/products/FiberWax.png",
         ],
         brand: "FIBER HAIR WAX",
         title: "FIBER HAIR WAX",
@@ -94,6 +101,8 @@ const productsData = [
     }, {
         id: 103,
         images: [
+            "/images/products/CreamPomade.png",
+            "/images/products/CreamPomade.png",
             "/images/products/CreamPomade.png",
         ],
         brand: "CREAM POMADE",
@@ -113,6 +122,8 @@ const productsData = [
         id: 104,
         images: [
             "/images/products/FiberWax.png",
+            "/images/products/FiberWax.png",
+            "/images/products/FiberWax.png",
         ],
         brand: "HAIR STYLING POWDER EXTRA VOLUME",
         title: "HAIR STYLING POWDER EXTRA VOLUME",
@@ -131,6 +142,8 @@ const productsData = [
         id: 105,
         images: [
             "/images/products/FiberWax.png",
+            "/images/products/FiberWax.png",
+            "/images/products/FiberWax.png",
         ],
         brand: "GREASE HEAVY HOLD",
         title: "GREASE HEAVY HOLD",
@@ -148,6 +161,8 @@ const productsData = [
     },{
         id: 106,
         images: [
+            "/images/products/FiberWax.png",
+            "/images/products/FiberWax.png",
             "/images/products/FiberWax.png",
         ],
 
@@ -168,6 +183,8 @@ const productsData = [
         id: 107,
         images: [
             "/images/products/ClassicPomade.png",
+            "/images/products/ClassicPomade.png",
+            "/images/products/ClassicPomade.png",
         ],
         brand: "CLASSIC POMADE",
         title: "CLASSIC POMADE",
@@ -186,7 +203,9 @@ const productsData = [
     {
         id: 108,
         images: [
-            "/images/products/AquaWaxGreen.png"
+            "/images/products/AquaWaxGreen.png",
+            "/images/products/AquaWaxGreen.png",
+            "/images/products/AquaWaxGreen.png",
         ],
         brand: "AquaWaxGREEN",
         title: "AQUA WAX 4 GREEN",
@@ -205,7 +224,9 @@ const productsData = [
     {
         id: 109,
         images: [
-            "/images/products/AquaWaxBlue.png"
+            "/images/products/AquaWaxBlue.png",
+            "/images/products/AquaWaxBlue.png",
+            "/images/products/AquaWaxBlue.png",
         ],
         brand: "AquaWaxBLUE",
         title: "AQUA WAX 5 BLUE",
@@ -224,6 +245,8 @@ const productsData = [
     {
         id: 110,
         images: [
+            "/images/products/waxRed.png",
+            "/images/products/waxRed.png",
             "/images/products/waxRed.png",
         ],
         brand: "AquaWaxRed",
@@ -246,6 +269,7 @@ const productsData = [
         images: [
             "/images/products/AquaWaxBlack.png",
             "/images/products/Black.png",
+            "/images/products/Black.png",
         ],
         brand: "AquaWaxBLACK",
         title: "AQUA WAX 8 BLACK",
@@ -266,6 +290,7 @@ const productsData = [
         images: [
             "/images/products/AquaWaxVioletta1.png",
             "/images/products/AquaWaxVioletta.png",
+            "/images/products/AquaWaxVioletta.png",
         ],
         brand: "AquaWaxVIOLETTA",
         title: "AQUA WAX 6 VIOLETTA",
@@ -284,6 +309,8 @@ const productsData = [
     {
         id: 113,
         images: [
+            "/images/products/ShavingGelBlue.png",
+            "/images/products/ShavingGelBlue.png",
             "/images/products/ShavingGelBlue.png",
         ],
         brand: "SHAVING GEL BLUE",
@@ -304,6 +331,8 @@ const productsData = [
         id: 114,
         images: [
             "/images/products/ShavingGelMetallic.png",
+            "/images/products/ShavingGelMetallic.png",
+            "/images/products/ShavingGelMetallic.png",
         ],
         brand: "SHAVING GEL METALLIC",
         title: "SHAVING GEL METALLIC",
@@ -322,6 +351,8 @@ const productsData = [
     {
         id: 115,
         images: [
+            "/images/products/ShavingGelGold.png",
+            "/images/products/ShavingGelGold.png",
             "/images/products/ShavingGelGold.png",
         ],
         brand: "SHAVING GEL METALLIC GOLD",
@@ -342,6 +373,8 @@ const productsData = [
         id: 116,
         images: [
             "/images/products/ShavingGelRed.png",
+            "/images/products/ShavingGelRed.png",
+            "/images/products/ShavingGelRed.png",
         ],
         brand: "SHAVING GEL RED",
         title: "SHAVING GEL RED",
@@ -360,6 +393,8 @@ const productsData = [
     {
         id: 117,
         images: [
+            "/images/products/ShavingGelPearlyGreen.png",
+            "/images/products/ShavingGelPearlyGreen.png",
             "/images/products/ShavingGelPearlyGreen.png",
         ],
         brand: "SHAVING GEL PEARLY GREEN",
@@ -380,6 +415,8 @@ const productsData = [
         id: 118,
         images: [
             "/images/products/AfterShaveColombia.png",
+            "/images/products/AfterShaveColombia.png",
+            "/images/products/AfterShaveColombia.png",
         ],
         brand: "AFTER SHAVE CREAM COLOGNE COLOMBIA",
         title: "AFTER SHAVE CREAM COLOGNE COLOMBIA",
@@ -398,6 +435,8 @@ const productsData = [
     {
         id: 119,
         images: [
+            "/images/products/AfterShaveIstanbul.png",
+            "/images/products/AfterShaveIstanbul.png",
             "/images/products/AfterShaveIstanbul.png",
         ],
         brand: "AFTER SHAVE CREAM COLOGNE ISTANBUL",
@@ -418,6 +457,8 @@ const productsData = [
         id: 120,
         images: [
             "/images/products/AfterShaveNewYork.png",
+            "/images/products/AfterShaveNewYork.png",
+            "/images/products/AfterShaveNewYork.png",
         ],
         brand: "AFTER SHAVE CREAM COLOGNE NEW YORK",
         title: "AFTER SHAVE CREAM COLOGNE NEW YORK",
@@ -436,6 +477,8 @@ const productsData = [
     {
         id: 121,
         images: [
+            "/images/products/AfterShaveLondon.png",
+            "/images/products/AfterShaveLondon.png",
             "/images/products/AfterShaveLondon.png",
         ],
         brand: "AFTER SHAVE CREAM COLOGNE LONDON",
@@ -456,6 +499,8 @@ const productsData = [
         id: 122,
         images: [
             "/images/products/oilForBeardGreen.png",
+            "/images/products/oilForBeardGreen.png",
+            "/images/products/oilForBeardGreen.png",
         ],
         brand: "AFTER SHAVE COLOGNE SYDNEY",
         title: "AFTER SHAVE COLOGNE SYDNEY",
@@ -475,6 +520,8 @@ const productsData = [
         id: 123,
         images: [
             "/images/products/oilForBeardRed.png",
+            "/images/products/oilForBeardRed.png",
+            "/images/products/oilForBeardRed.png",
         ],
         brand: "AFTER SHAVE COLOGNE SICILIA",
         title: "AFTER SHAVE COLOGNE SICILIA",
@@ -493,6 +540,8 @@ const productsData = [
     {
         id: 124,
         images: [
+            "/images/products/oilForBeardYellow.png",
+            "/images/products/oilForBeardYellow.png",
             "/images/products/oilForBeardYellow.png",
         ],
         brand: "AFTER SHAVE COLOGNE LAS VEGAS",
@@ -516,6 +565,8 @@ const productsData = [
         heroImage: "/images/products/oilForBeardViolet.png",
         images: [
             "/images/products/oilForBeardViolet.png",
+            "/images/products/oilForBeardViolet.png",
+            "/images/products/oilForBeardViolet.png",
         ],
         brand: "AFTER SHAVE COLOGNE MOSCOW",
         title: "AFTER SHAVE COLOGNE MOSCOW",
@@ -534,6 +585,8 @@ const productsData = [
     {
         id: 126,
         images: [
+            "/images/products/oilForBeardBlue.png",
+            "/images/products/oilForBeardBlue.png",
             "/images/products/oilForBeardBlue.png",
         ],
         brand: "AFTER SHAVE COLOGNE BERLIN",
@@ -554,6 +607,8 @@ const productsData = [
         id: 127,
         images: [
             "/images/products/oilForBeardLemon.png",
+            "/images/products/oilForBeardLemon.png",
+            "/images/products/oilForBeardLemon.png",
         ],
         brand: "AFTER SHAVE COLOGNE LEMON",
         title: "AFTER SHAVE COLOGNE LEMON",
@@ -572,6 +627,8 @@ const productsData = [
     {
         id: 128,
         images: [
+            "/images/products/BeardOilBlack.png",
+            "/images/products/BeardOilBlack.png",
             "/images/products/BeardOilBlack.png",
         ],
         brand: "BEARD OIL BLACK",
@@ -592,6 +649,8 @@ const productsData = [
         id: 129,
         images: [
             "/images/products/BeardOilRoseGold.png",
+            "/images/products/BeardOilRoseGold.png",
+            "/images/products/BeardOilRoseGold.png",
         ],
         brand: "BEARD OIL ROSE GOLD",
         title: "BEARD OIL ROSE GOLD",
@@ -610,6 +669,8 @@ const productsData = [
     {
         id: 130,
         images: [
+            "/images/products/BeardOilGold.png",
+            "/images/products/BeardOilGold.png",
             "/images/products/BeardOilGold.png",
         ],
         brand: "BEARD OIL GOLD",
@@ -630,6 +691,8 @@ const productsData = [
         id: 131,
         images: [
             "/images/products/BeardOilSilver.png",
+            "/images/products/BeardOilSilver.png",
+            "/images/products/BeardOilSilver.png",
         ],
         brand: "BEARD OIL SILVER",
         title: "BEARD OIL SILVER",
@@ -648,6 +711,8 @@ const productsData = [
     {
         id: 132,
         images: [
+            "/images/products/cremBeard.png",
+            "/images/products/cremBeard.png",
             "/images/products/cremBeard.png",
         ],
         tag: "hero-product",
@@ -672,6 +737,8 @@ const productsData = [
         tag: "featured-product",
         images: [
             "/images/products/cremBeard2.png",
+            "/images/products/cremBeard2.png",
+            "/images/products/cremBeard2.png",
         ],
         brand: "BEARD BALM ARGAN OIL",
         title: "BEARD BALM ARGAN OIL",
@@ -690,6 +757,8 @@ const productsData = [
     {
         id: 134,
         images: [
+            "/images/products/beardShampoo.png",
+            "/images/products/beardShampoo.png",
             "/images/products/beardShampoo.png",
         ],
         brand: "BEARD SHAMPOO",
@@ -712,6 +781,8 @@ const productsData = [
         heroImage: "/images/products/shampooKeratin.png",
         images: [
             "/images/products/shampooKeratin.png",
+            "/images/products/shampooKeratin.png",
+            "/images/products/shampooKeratin.png",
         ],
         brand: "KERATIN SHAMPOO ",
         title: "KERATIN SHAMPOO ",
@@ -728,6 +799,8 @@ const productsData = [
     {
         id: 136,
         images: [
+            "/images/products/shampooArgan.png",
+            "/images/products/shampooArgan.png",
             "/images/products/shampooArgan.png",
         ],
         brand: "ARGAN SHAMPOO",
@@ -747,6 +820,8 @@ const productsData = [
         id: 137,
         images: [
             "/images/products/shampooWhite.png",
+            "/images/products/shampooWhite.png",
+            "/images/products/shampooWhite.png",
         ],
         brand: "BLACK GARLIC SHAMPOO",
         title: "BLACK GARLIC SHAMPOO",
@@ -765,6 +840,8 @@ const productsData = [
         id: 138,
         images: [
             "/images/products/DandruffShampoo.png",
+            "/images/products/DandruffShampoo.png",
+            "/images/products/DandruffShampoo.png",
         ],
         brand: "DANDRUFF CONTROL SHAMPOO",
         title: "DANDRUFF CONTROL SHAMPOO",
@@ -781,6 +858,8 @@ const productsData = [
     {
         id: 139,
         images: [
+            "/images/products/hairTonic.png",
+            "/images/products/hairTonic.png",
             "/images/products/hairTonic.png",
         ],
         brand: "HAIR TONIC",
@@ -799,6 +878,8 @@ const productsData = [
         id: 140,
         images: [
             "/images/products/toniccGrooming.png",
+            "/images/products/toniccGrooming.png",
+            "/images/products/toniccGrooming.png",
         ],
         brand: "TONIC GROOMING",
         title: "TONIC GROOMING",
@@ -816,6 +897,8 @@ const productsData = [
         id: 141,
         images: [
             "/images/products/SeaSalt.jpg",
+            "/images/products/SeaSalt.jpg",
+            "/images/products/SeaSalt.jpg",
         ],
         brand: "SEA SALT",
         title: "SEA SALT",
@@ -832,6 +915,8 @@ const productsData = [
     {
         id: 142,
         images: [
+            "/images/products/barberPowder.png",
+            "/images/products/barberPowder.png",
             "/images/products/barberPowder.png",
         ],
         brand: "BARBERSHOP CLASSIC",
