@@ -15,7 +15,7 @@ import styled from "styled-components";
 
 
 const Header = () => {
-    const [width, setWidth] = useState(1000)
+    const [width, setWidth] = useState(window.innerWidth)
     const breakpoint = 768
     useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)
