@@ -1,18 +1,20 @@
-import React, { useContext } from 'react';
-import { BsCartX } from 'react-icons/bs';
-import { calculateTotal, displayMoney } from '../helpers/utils';
+import React, {useContext, useState} from 'react';
+import {BsCartX} from 'react-icons/bs';
+import {calculateTotal, displayMoney} from '../helpers/utils';
 import useDocTitle from '../hooks/useDocTitle';
 import cartContext from '../contexts/cart/cartContext';
 import CartItem from '../components/cart/CartItem';
 import EmptyView from '../components/common/EmptyView';
 import {Form} from "../contexts/form";
-
+import RhfWithAction from "../components/modal";
+import styled from "styled-components";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const Cart = () => {
 
     useDocTitle('Cart');
 
-    const { cartItems } = useContext(cartContext);
+    const {cartItems} = useContext(cartContext);
 
     const cartQuantity = cartItems.length;
 
@@ -38,6 +40,19 @@ const Cart = () => {
     const totalAmount = calculateCartTotal - calculateCartDiscount;
     const displayTotalAmount = displayMoney(totalAmount);
 
+    const [showModal, setShowModal] = useState(false);
+    const handleOrderButtonClick = () => {
+        setShowModal(true);
+    };
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
+
+    const handleOverlayClick = (event) => {
+        if (event.target === event.currentTarget) { // Проверяем, что клик произошел именно на overlay
+            setShowModal(false);
+        }
+    };
 
     return (
         <>
@@ -46,7 +61,7 @@ const Cart = () => {
                     {
                         cartQuantity === 0 ? (
                             <EmptyView
-                                icon={<BsCartX />}
+                                icon={<BsCartX/>}
                                 msg="Ваша корзина пуста"
                                 link="/all-products"
                                 btnText="Начать покупки"
@@ -89,8 +104,16 @@ const Cart = () => {
                                                 <b>{displayTotalAmount}</b>
                                             </div>
                                         </div>
-                                        <button type="button" className="btn checkout_btn">Заказать</button>
-                                        <Form></Form>
+                                        <button type="button" className="btn checkout_btn"
+                                                onClick={handleOrderButtonClick}>Заказать
+                                        </button>
+                                        {showModal &&
+                                        <ModalWindow onClick={handleOverlayClick}>
+                                            <InputGroup>
+                                                <CloseButton onClick={() => setShowModal(false)}><IoMdCloseCircleOutline size={"30"}></IoMdCloseCircleOutline></CloseButton>
+                                                <RhfWithAction cartItems={cartItems}/>
+                                            </InputGroup>
+                                        </ModalWindow>}
                                     </div>
                                 </div>
                             </div>
@@ -103,3 +126,29 @@ const Cart = () => {
 };
 
 export default Cart;
+export const ModalWindow = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+export const InputGroup = styled.div`
+  position: relative;
+  background-color: #000000;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+`
+export const CloseButton = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #e1dede;
+  border: none;
+  cursor: pointer;
+`
