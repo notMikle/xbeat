@@ -42,27 +42,43 @@ export const brandsMenu = [
 export const categoryMenu = [
     {
         id: 1,
-        label: "Шампунь для волос",
+        label: "Кондиционер для волос",
         checked: false,
     },
     {
         id: 2,
-        label: "Шампунь для бороды",
+        label: "Средства для укладки волос",
         checked: false,
     },
     {
         id: 3,
-        label: "Гель после бритья",
+        label: "Гель для бритья",
         checked: false,
     },
     {
         id: 4,
-        label: "Для укладки",
+        label: "Крем после бритья",
         checked: false,
     },
     {
         id: 5,
-        label: "Тоник",
+        label: "Лосьон после бритья",
         checked: false,
     },
+    {
+        id: 6,
+        label: "Средства для ухода за бородой",
+        checked: false,
+    },
+    {
+        id: 7,
+        label: "Шампунь",
+        checked: false,
+    },
+    {
+        id: 8,
+        label: "Тоник для волос",
+        checked: false,
+    },
+
 ];

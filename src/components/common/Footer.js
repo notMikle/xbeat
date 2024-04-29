@@ -80,7 +80,7 @@ const Footer = () => {
                     <div className="sub_footer_wrapper">
                         <div className="foot_copyright">
                             <p>
-                                {currYear} | Лика - бандито
+                                {currYear} | Bandido Barbershop
                             </p>
                         </div>
                         <div className="foot_social">
@@ -88,7 +88,7 @@ const Footer = () => {
                                 footSocial.map((item) => {
                                     const { id, icon, path } = item;
                                     return (
-                                        <Link to={path} key={id}>{icon}</Link>
+                                        <a href={path} key={id}>{icon}</a>
                                     );
                                 })
                             }

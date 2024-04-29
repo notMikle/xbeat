@@ -26,7 +26,7 @@ const FilterBar = () => {
                         onClick={() => handleMobSortVisibility(true)}
                     >
                         <BiSort />
-                        <span>Sort</span>
+                        <span>Сортировка</span>
                     </h3>
                     <span>|</span>
                     <h3
@@ -34,7 +34,7 @@ const FilterBar = () => {
                         onClick={() => handleMobFilterVisibility(true)}
                     >
                         <BiFilterAlt />
-                        <span>Filter</span>
+                        <span>Фильтр</span>
                     </h3>
                 </div>
                 <FilterBarOptions />

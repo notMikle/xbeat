@@ -35,7 +35,7 @@ const FilterBarOptions = () => {
                             className="btn"
                             onClick={handleClearFilters}
                         >
-                            Clear Filters
+                            Очистить фильтр
                         </button>
                     </div>
                 )
@@ -44,7 +44,7 @@ const FilterBarOptions = () => {
             {/*===== Sort-menu =====*/}
             <div className={`sort_options ${isMobSortVisible ? 'show' : ''}`}>
                 <div className="sort_head">
-                    <h3 className="title">Sort By</h3>
+                    <h3 className="title">Сортировка</h3>
                     <button
                         type="button"
                         className="close_btn"

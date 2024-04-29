@@ -1,4 +1,5 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import {PiTelegramLogo} from "react-icons/pi";
+import {AiOutlinePhone, AiOutlineWhatsApp} from "react-icons/ai";
 
 export const footMenu = [
     {
@@ -7,27 +8,22 @@ export const footMenu = [
         menu: [
             {
                 id: 1,
-                link: "FAQs",
+                link: "Варианты доставки",
                 path: "/"
             },
             {
                 id: 2,
-                link: "Трэк номер",
+                link: "Правила возврата",
                 path: "/"
             },
             {
                 id: 3,
-                link: "Отменить заказ",
+                link: "Оплата",
                 path: "/"
             },
             {
                 id: 4,
-                link: "Вернуть товар",
-                path: "/"
-            },
-            {
-                id: 5,
-                link: "Еще что нибудь",
+                link: "Для оптовиков",
                 path: "/"
             },
         ]
@@ -35,31 +31,16 @@ export const footMenu = [
 
     {
         id: 3,
-        title: "Company",
+        title: "О компании",
         menu: [
             {
                 id: 1,
-                link: "О нас",
+                link: "Как нас найти",
                 path: "/"
             },
             {
                 id: 2,
-                link: "Контакты",
-                path: "/"
-            },
-            {
-                id: 3,
-                link: "Ватсап",
-                path: "/"
-            },
-            {
-                id: 4,
-                link: "Телеграм",
-                path: "/"
-            },
-            {
-                id: 5,
-                link: "Инстаграм",
+                link: "Сотрудничество",
                 path: "/"
             },
         ]
@@ -69,22 +50,17 @@ export const footMenu = [
 export const footSocial = [
     {
         id: 1,
-        icon: <FaFacebookF />,
-        path: "/",
+        icon: <PiTelegramLogo />,
+        path: "https://t.me/bandidorussia",
     },
     {
         id: 2,
-        icon: <FaTwitter />,
-        path: "/",
+        icon: <AiOutlineWhatsApp />,
+        path: "https://wa.me/+79507157766",
     },
     {
         id: 3,
-        icon: <FaInstagram />,
-        path: "/",
-    },
-    {
-        id: 4,
-        icon: <FaLinkedinIn />,
+        icon: <AiOutlinePhone />,
         path: "/",
     },
 ];
