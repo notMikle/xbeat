@@ -22,7 +22,7 @@ const Header = () => {
         window.addEventListener('resize', handleWindowResize)
         return () => window.removeEventListener('resize', handleWindowResize)
     }, [])
-    
+
     return (
         <>
             {width < breakpoint ?  <MobileMenu/>: <DesktopMenu/>}
@@ -124,7 +124,7 @@ const MobileMenu = ()=>{
                                 </div>
                                 <a href="https://t.me/bandidorussia"><PiTelegramLogo size={20}/></a>
                                 <a href="https://wa.me/+79507157766"><AiOutlineWhatsApp size={20}/></a>
-                                <a href=""><AiOutlinePhone size={20}/></a>
+                                <a href="tel: +79507157766"><AiOutlinePhone size={20}/></a>
                             </CallMobile>
                         </StyledContact>
                     </nav>
@@ -219,7 +219,7 @@ const DesktopMenu = ()=>{
                             <Call>
                                 <a href="https://t.me/bandidorussia"><PiTelegramLogo/></a>
                                 <a href="https://wa.me/+79507157766"><AiOutlineWhatsApp/></a>
-                                <a href=""><AiOutlineInstagram/></a>
+                                <a href="tel: +79507157766"><AiOutlinePhone/></a>
                             </Call>
                         </StyledContact>
                     </nav>
