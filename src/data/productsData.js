@@ -13,7 +13,7 @@ const productsData = [
         category: "Кондиционер для волос",
         type: "Кондиционер для волос",
         size: "350ml",
-        finalPrice: 600,
+        finalPrice: 1666,
         originalPrice: 1500,
         optPrice:500,
         quantity: 12,
