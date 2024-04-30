@@ -626,7 +626,7 @@ const productsData = [
     },
     {
         id: 128,
-        tag: "hero-product",
+        // tag: "hero-product",
         // tagline: "Масло для бороды",
         // heroImage: "/images/products/BeardOilBlack.png",
         // images: [
