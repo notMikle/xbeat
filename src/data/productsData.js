@@ -630,7 +630,9 @@ const productsData = [
         tagline: "Масло для бороды",
         heroImage: "/images/products/BeardOilBlack.png",
         images: [
-            "/images/products/black.png",
+            "/images/products/BeardOilBlack.png",
+            "/images/products/BeardOilBlack.png",
+            "/images/products/BeardOilBlack.png",
         ],
         brand: "BEARD OIL BLACK",
         title: "BEARD OIL BLACK",
