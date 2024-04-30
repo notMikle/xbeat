@@ -52,7 +52,7 @@ const MobileMenu = ()=>{
             <div className="container">
                 <div className="navbar">
                     <h2 className="nav_logo">
-                        <Link to="/">Bandido</Link>
+                        <Link to="/">Bandido BS</Link>
                     </h2>
                     <nav className="nav_actions">
                         {/*<div className="search_action">*/}

@@ -47,9 +47,9 @@ const HeroSlider = () => {
                                 </h2>
                                 <Link to={`${path}${id}`} className="btn">В корзину</Link>
                             </div>
-                            <div className="hero_item_img">
+                            <figure className="hero_item_img">
                                 <img src={heroImage} alt="product-img" />
-                            </div>
+                            </figure>
                         </SwiperSlide>
                     );
                 })

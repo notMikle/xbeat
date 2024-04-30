@@ -3,8 +3,8 @@ const productsData = [
         id: 98,
         images: [
             "/images/products/hairConditioner3.png",
-            // "/images/products/hairConditioner3.png",
-            // "/images/products/hairConditioner3.png",
+            "/images/products/hairConditioner3.png",
+            "/images/products/hairConditioner3.png",
         ],
         brand: "TWO PHASE HAIR CONDITIONER HERBAL",
         title: "TWO PHASE HAIR CONDITIONER HERBAL",
@@ -561,7 +561,7 @@ const productsData = [
     {
         id: 125,
         tag: "hero-product",
-        tagline: "Лосьон после бритья",
+        tagline: "AFTER SHAVE COLOGNE MOSCOW",
         heroImage: "/images/products/oilForBeardViolet.png",
         images: [
             "/images/products/oilForBeardViolet.png",
@@ -626,9 +626,6 @@ const productsData = [
     },
     {
         id: 128,
-        tag: "hero-product",
-        tagline: "Масло для бороды",
-        heroImage: "/images/products/BeardOilBlack.png",
         images: [
             "/images/products/BeardOilBlack.png",
             "/images/products/BeardOilBlack.png",
@@ -719,7 +716,7 @@ const productsData = [
             "/images/products/cremBeard.png",
         ],
         tag: "hero-product",
-        tagline: "Бальзам-стайлер Bandido Beard",
+        tagline: "BEARD BALM LIMITED EDITION",
         heroImage: "/images/products/cremBeard.png",
         brand: "BEARD BALM LIMITED EDITION",
         title: "BEARD BALM LIMITED EDITION",
@@ -780,7 +777,7 @@ const productsData = [
     {
         id: 135,
         tag: "hero-product",
-        tagline: "Шампунь для волос",
+        tagline: "KERATIN SHAMPOO",
         heroImage: "/images/products/shampooKeratin.png",
         images: [
             "/images/products/shampooKeratin.png",

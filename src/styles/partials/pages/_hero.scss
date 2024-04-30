@@ -1,5 +1,4 @@
 #hero {
-    margin: 0 47px;
     position: relative;
     //background-color: var(--bg-color);
     min-height: 100vh;
@@ -17,18 +16,16 @@
 }
 
 .hero_wrapper {
-
     position: relative;
     @include grid-cols(2, 0.5fr, 2rem);
     place-content: center;
     place-items: center;
-    overflow: hidden;
 
     &::before {
         @include pseudo($top: 10%);
         font-size: 10rem;
         font-weight: 800;
-        opacity: 0.04;
+        opacity: 0.05;
 
         @include devices(xl) {
             font-size: 12rem;
@@ -43,15 +40,12 @@
         &.hero_slide-0::before {
             content: "Лосьон после бритья";
         }
-        &.hero_slide-1::before {
-            content: "Масло для бороды";
-        }
 
-        &.hero_slide-2::before {
+        &.hero_slide-1::before {
             content: "Стайлер для бороды";
         }
 
-        &.hero_slide-3::before {
+        &.hero_slide-2::before {
             content: "Шампунь для волос";
         }
         }
@@ -72,8 +66,7 @@
 .hero_item_txt,
 .hero_item_img {
     position: relative;
-    height: auto;
-    overflow: hidden;
+    width: 80%;
 }
 
 .hero_item_txt {
@@ -118,17 +111,10 @@
 }
 
 .hero_item_img {
-
-    background-size: cover;
-    width: 500px; // например
-    height: 500px;
     overflow: hidden;
+
     img {
         @include img-fit;
-        width: auto; /* Установите ширину изображения на 100% */
-        height: 100%; /* Это позволит изображению сохранять пропорции */
-        display: block;
-        //object-fit: contain;
     }
 
     @include devices(lg) {
