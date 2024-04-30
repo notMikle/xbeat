@@ -1,12 +1,9 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
-import {AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser} from 'react-icons/ai';
+import {AiOutlineSearch, AiOutlineShoppingCart} from 'react-icons/ai';
 import { AiOutlinePhone } from "react-icons/ai";
-
-import {AiOutlineInstagram} from "react-icons/ai";
 import {PiTelegramLogo} from "react-icons/pi";
 import {AiOutlineWhatsApp} from "react-icons/ai";
-import {dropdownMenu} from '../../data/headerData';
 import commonContext from '../../contexts/common/commonContext';
 import cartContext from '../../contexts/cart/cartContext';
 import AccountForm from '../form/AccountForm';
@@ -33,7 +30,6 @@ const Header = () => {
 export default Header;
 
 const MobileMenu = ()=>{
-    const {formUserInfo, toggleForm, toggleSearch} = useContext(commonContext);
     const {cartItems} = useContext(cartContext);
     const [isSticky, setIsSticky] = useState(false);
 
