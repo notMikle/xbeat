@@ -627,11 +627,11 @@ const productsData = [
     {
         id: 128,
         tag: "hero-product",
-        // tagline: "Масло для бороды",
-        // heroImage: "/images/products/BeardOilBlack.png",
-        // images: [
-        //     "/images/products/black.png",
-        // ],
+        tagline: "Масло для бороды",
+        heroImage: "/images/products/BeardOilBlack.png",
+        images: [
+            "/images/products/black.png",
+        ],
         brand: "BEARD OIL BLACK",
         title: "BEARD OIL BLACK",
         info: "Масло для бороды BANDIDO Обеспечивает питание и увлажнение. Наше масло для бороды помогает смягчить волосы на лице, чтобы сделать их более управляемыми. В то же время предотвращает зуд и перхоть. ",

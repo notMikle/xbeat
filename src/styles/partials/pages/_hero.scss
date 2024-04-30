@@ -43,15 +43,15 @@
         &.hero_slide-0::before {
             content: "Лосьон после бритья";
         }
-        //&.hero_slide-1::before {
-        //    content: "Масло для бороды";
-        //}
-
         &.hero_slide-1::before {
-            content: "Стайлер для бороды";
+            content: "Масло для бороды";
         }
 
         &.hero_slide-2::before {
+            content: "Стайлер для бороды";
+        }
+
+        &.hero_slide-3::before {
             content: "Шампунь для волос";
         }
         }
