@@ -11,7 +11,7 @@ export default async function sendMessage(name, phone, dataTech) {
             Имя: ${name} 
             Телефон: ${phone}
             Хочет купить: ${dataTech.cartItems.map(el=>
-                `${el.brand} - ${el.quantity} шт `
+                `${el.title} - ${el.quantity} шт `
             )}
             Итого: ${dataTech.displayTotalAmount}
             `
