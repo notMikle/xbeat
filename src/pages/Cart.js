@@ -9,6 +9,7 @@ import {Form} from "../contexts/form";
 import RhfWithAction from "../components/modal";
 import styled from "styled-components";
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import quantityBox from "../components/common/QuantityBox";
 
 const Cart = () => {
 
@@ -29,7 +30,7 @@ const Cart = () => {
 
     // total discount
     const cartDiscount = cartItems.map(item => {
-        return (item.originalPrice - item.finalPrice) * item.quantity;
+        return item.quantity<item.quantityBox? (item.originalPrice - item.finalPrice) * item.quantity : (item.originalPrice - item.finalPrice*0.9) * item.quantity
     });
 
     const calculateCartDiscount = calculateTotal(cartDiscount);
@@ -72,6 +73,7 @@ const Cart = () => {
                                     {
                                         cartItems.map(item => (
                                             <CartItem
+                                                quantityBox={quantityBox}
                                                 key={item.id}
                                                 {...item}
                                             />

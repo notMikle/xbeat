@@ -47,7 +47,7 @@ const ProductSummary = (props) => {
                                 <div className="prod_specs">
                                     <ul>
                                         <li>
-                                            <span>Брэнд</span>
+                                            <span>Бренд</span>
                                             <span>{brand}</span>
                                         </li>
                                         <li>
@@ -58,10 +58,10 @@ const ProductSummary = (props) => {
                                             <span>Категория</span>
                                             <span>{category}</span>
                                         </li>
-                                        <li>
-                                            <span>Тип</span>
-                                            <span>{type}</span>
-                                        </li>
+                                        {/*<li>*/}
+                                        {/*    <span>Тип</span>*/}
+                                        {/*    <span>{type}</span>*/}
+                                        {/*</li>*/}
                                         {/*<li>*/}
                                         {/*    <span>Описание</span>*/}
                                         {/*    <span>{info}</span>*/}

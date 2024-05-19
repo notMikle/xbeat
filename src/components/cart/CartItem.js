@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 import { displayMoney } from '../../helpers/utils';
 import cartContext from '../../contexts/cart/cartContext';
 import QuantityBox from '../common/QuantityBox';
+import styled from "styled-components";
 
 
 const CartItem = (props) => {
 
-    const { id, images, title, info, finalPrice, originalPrice, quantity, path } = props;
+    const { id, images, title, info, finalPrice, originalPrice, quantity, path, quantityBox, optPrice } = props;
 
     const { removeItem } = useContext(cartContext);
 
     const newPrice = displayMoney(finalPrice);
     const oldPrice = displayMoney(originalPrice);
+    console.log(quantityBox, quantity)
 
 
     return (
@@ -28,6 +30,7 @@ const CartItem = (props) => {
                     <div className="cart_item_head">
                         <h4 className="cart_item_title">
                             <Link to={`/product-details/${id}`}>{title} {info}</Link>
+                            <StyledP>(При заказе от {quantityBox}шт скидка 10%)</StyledP>
                         </h4>
                         <div className="cart_item_del">
                             <span onClick={() => removeItem(id)}>
@@ -38,7 +41,10 @@ const CartItem = (props) => {
                     </div>
 
                     <h2 className="cart_item_price">
-                        {newPrice} &nbsp;
+                        {/*{quantityBox}*/}
+                        {quantity<quantityBox?newPrice:optPrice}
+                        {/*{newPrice}*/}
+                        &nbsp;
                         <small><del>{oldPrice}</del></small>
                     </h2>
 
@@ -50,3 +56,7 @@ const CartItem = (props) => {
 };
 
 export default CartItem;
+const StyledP = styled.p`
+  padding-top: 10px;
+color: green;
+`
