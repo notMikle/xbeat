@@ -113,7 +113,7 @@ const Cart = () => {
                                         <ModalWindow onClick={handleOverlayClick}>
                                             <InputGroup>
                                                 <CloseButton onClick={() => setShowModal(false)}><IoMdCloseCircleOutline size={"30"}></IoMdCloseCircleOutline></CloseButton>
-                                                <RhfWithAction cartItems={cartItems}/>
+                                                <RhfWithAction cartItems={cartItems} displayTotalAmount={displayTotalAmount}/>
                                             </InputGroup>
                                         </ModalWindow>}
                                     </div>

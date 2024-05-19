@@ -13,8 +13,7 @@ export default async function sendMessage(name, phone, dataTech) {
             Хочет купить: ${dataTech.cartItems.map(el=>
                 `${el.brand} - ${el.quantity} шт `
             )}
-            Итого: ${dataTech.cartItems.reduce((acc,el)=>
-                el.finalPrice*el.quantity+acc, 0)} рублей
+            Итого: ${dataTech.displayTotalAmount}
             `
         });
         return telegramResponse.data;
@@ -29,7 +28,7 @@ export async function addEntry(data, dataTech) {
     console.log(result)
     if (result.success) {
         sendMessage(data.name, data.phone, dataTech)
-        console.log(dataTech)
+        // console.log(dataTech)
         return { success: true, data: result.data }
     }
 

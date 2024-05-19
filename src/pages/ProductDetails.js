@@ -137,7 +137,7 @@ const ProductDetails = () => {
 
             <section id="related_products" className="section">
                 <div className="container">
-                    <SectionsHead heading="Related Products"/>
+                    <SectionsHead heading="Похожие товары"/>
                     <RelatedSlider category={category}/>
                 </div>
             </section>

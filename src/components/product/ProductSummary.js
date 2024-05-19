@@ -2,13 +2,14 @@ import React from 'react';
 import reviewsData from '../../data/reviewsData';
 import useActive from '../../hooks/useActive';
 import ProductReviews from './ProductReviews';
+import styled from "styled-components";
 
 
 const ProductSummary = (props) => {
 
     const { brand, title, info, category, type, connectivity } = props;
 
-    const { active, handleActive, activeClass } = useActive('specs');
+    const { active, handleActive, activeClass } = useActive('overview');
 
 
     return (
@@ -19,17 +20,17 @@ const ProductSummary = (props) => {
                     {/*===== Product-Summary-Tabs =====*/}
                     <div className="prod_summary_tabs">
                         <ul className="tabs">
-                            <li
-                                className={`tabs_item ${activeClass('specs')}`}
-                                onClick={() => handleActive('specs')}
-                            >
-                                О продукте
-                            </li>
+                            {/*<li*/}
+                            {/*    className={`tabs_item ${activeClass('specs')}`}*/}
+                            {/*    onClick={() => handleActive('specs')}*/}
+                            {/*>*/}
+                            {/*    О продукте*/}
+                            {/*</li>*/}
                             <li
                                 className={`tabs_item ${activeClass('overview')}`}
                                 onClick={() => handleActive('overview')}
                             >
-                                Что-то написать
+                                Описание
                             </li>
                             {/*<li*/}
                             {/*    className={`tabs_item ${activeClass('reviews')}`}*/}
@@ -66,21 +67,28 @@ const ProductSummary = (props) => {
                                         {/*    <span>Описание</span>*/}
                                         {/*    <span>{info}</span>*/}
                                         {/*</li>*/}
-                                        <div className="prod_overview">
-                                            <span>{info}</span>
-                                        </div>
+                                        {/*<div className="prod_overview">*/}
+                                        {/*    <span>{info}</span>*/}
+                                        {/*</div>*/}
                                     </ul>
                                 </div>
                             ) : active === 'overview' ? (
                                 <div className="prod_overview">
-                                    <h3>The <span>{title}</span> {info} provides with fabulous sound quality</h3>
-                                    <ul>
-                                        <li>Товар супер</li>
-                                        <li>Доставка быстрая</li>
-                                        <li>Не будешь чушпаном</li>
-                                    </ul>
-                                    <p>Купи<b>{title} {info}</b> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eos facilis illum inventore laudantium natus odit officia pariatur. Aperiam commodi dignissimos ex nisi officia placeat quaerat quas saepe suscipit voluptate?</span>
-                                    </p>
+                                    <h3>Представляем Вам <span>{title}</span> {info} </h3>
+                                    <StyledUl>
+                                        <Styledli>
+                                            <span>Бренд</span>
+                                            <span>{brand}</span>
+                                        </Styledli>
+                                        <Styledli>
+                                            <span>Название</span>
+                                            <span>{title}</span>
+                                        </Styledli>
+                                        <Styledli>
+                                            <span>Категория</span>
+                                            <span>{category}</span>
+                                        </Styledli>
+                                    </StyledUl>
                                 </div>
                             ) : (
                                 <div className="prod_reviews">
@@ -99,3 +107,10 @@ const ProductSummary = (props) => {
 };
 
 export default ProductSummary;
+const Styledli = styled.li`
+display: flex;
+  justify-content: space-between;
+`
+const StyledUl = styled.ul`
+max-width: 600px;
+`
