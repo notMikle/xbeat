@@ -9,7 +9,7 @@ import cartContext from '../../contexts/cart/cartContext';
 import AccountForm from '../form/AccountForm';
 import SearchBar from './SearchBar';
 import styled from "styled-components";
-
+import { FaVk } from "react-icons/fa6";
 
 const Header = () => {
     const [width, setWidth] = useState(window.innerWidth)
@@ -119,6 +119,7 @@ const MobileMenu = ()=>{
                                     <div className="tooltip">Cart</div>
                                 </div>
                                 <a href="https://t.me/bandidorussia"><PiTelegramLogo size={20}/></a>
+                                <a href="https://vk.com/club225413610"><FaVk size={20}/></a>
                                 <a href="https://wa.me/+79507157766"><AiOutlineWhatsApp size={20}/></a>
                                 <a href="tel: +79507157766"><AiOutlinePhone size={20}/></a>
                             </CallMobile>
@@ -214,6 +215,7 @@ const DesktopMenu = ()=>{
                             </Call>
                             <Call>
                                 <a href="https://t.me/bandidorussia"><PiTelegramLogo/></a>
+                                <a href="https://vk.com/club225413610"><FaVk/></a>
                                 <a href="https://wa.me/+79507157766"><AiOutlineWhatsApp/></a>
                                 <a href="tel: +79507157766"><AiOutlinePhone/></a>
                             </Call>
@@ -230,7 +232,7 @@ const Call = styled.small`
  
   display: flex;
   justify-content: space-around;
-  font-size: 15px;
+  font-size: 20px;
 `
 const StyledContact = styled.div`
   display: flex;
