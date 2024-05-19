@@ -28,7 +28,7 @@ const ProductDetails = () => {
     // showing the Product based on the received 'id'
     const product = productsData.find(item => item.id === prodId);
 
-    const {images, title, info, category, finalPrice, originalPrice, optPrice, quantity, size} = product;
+    const {images, title, info, category, finalPrice, originalPrice, optPrice, quantity, size, quantityBox} = product;
 
     const [previewImg, setPreviewImg] = useState(images[0]);
 
@@ -111,7 +111,7 @@ const ProductDetails = () => {
                                     </h2>
                                     <p className="saved_price">При заказе от 1 уп. цена за
                                         шт: {optovikPrice} (Скидка:{savedDiscount}%)</p>
-                                    <span className="tax_txt">(Упаковка: {quantity} шт)</span>
+                                    <span className="tax_txt">(Упаковка: {quantityBox} шт)</span>
                                 </div>
 
 

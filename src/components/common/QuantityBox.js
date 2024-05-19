@@ -25,7 +25,7 @@ const QuantityBox = (props) => {
                 <button
                     type="button"
                     onClick={() => incrementItem(itemId)}
-                    disabled={itemQuantity >= 5}
+                    // disabled={itemQuantity >= 5}
                 >
                     <FaPlus />
                 </button>
