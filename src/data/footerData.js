@@ -1,5 +1,6 @@
 import {PiTelegramLogo} from "react-icons/pi";
 import {AiOutlinePhone, AiOutlineWhatsApp} from "react-icons/ai";
+import {FaVk} from "react-icons/fa6";
 
 export const footMenu = [
     {
@@ -55,12 +56,17 @@ export const footSocial = [
     },
     {
         id: 2,
+        icon: <FaVk />,
+        path: "https://vk.com/club225413610",
+    },
+    {
+        id: 3,
         icon: <AiOutlineWhatsApp />,
         path: "https://wa.me/+79507157766",
     },
     {
-        id: 3,
+        id: 4,
         icon: <AiOutlinePhone />,
-        path: "/",
+        path: "tel: +79507157766",
     },
 ];

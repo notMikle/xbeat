@@ -53,6 +53,7 @@ const MobileMenu = ()=>{
                 <div className="navbar">
                     <h2 className="nav_logo">
                         <Link to="/">Bandido</Link>
+
                     </h2>
                     <nav className="nav_actions">
                         {/*<div className="search_action">*/}
@@ -157,6 +158,7 @@ const DesktopMenu = ()=>{
                 <div className="navbar">
                     <h2 className="nav_logo">
                         <Link to="/">Bandido Barbershop</Link>
+                        <StyledSpan>Мужская косметика оптом</StyledSpan>
                     </h2>
                     <nav className="nav_actions">
                         <div className="search_action">
@@ -241,4 +243,8 @@ const StyledContact = styled.div`
 `
 const CallMobile = styled(Call)`
 gap: 20px;
+`
+const StyledSpan = styled.p`
+  font-size: 18px;
+  color: darkred;
 `
