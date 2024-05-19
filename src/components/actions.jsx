@@ -7,15 +7,14 @@ export default async function sendMessage(name, phone, dataTech) {
         const telegramResponse = await axios.post(`https://api.telegram.org/bot7003902578:AAHZEutxZGtg0XAg7l7WE8iCkcNPlcUm-gg/sendMessage`, {
             chat_id: -1001923149371,
             parse_mode: 'html',
-            text: `
-            Новая заявка!
+            text: `Новая заявка!
             Имя: ${name} 
             Телефон: ${phone}
-            Хочет купить: 
-            Категория: ${dataTech.cartItems[0].category}
-            Название: ${dataTech.cartItems[0].title}
-            Кол-во: ${dataTech.cartItems[0].quantity}
-            Итого: ${dataTech.cartItems[0].finalPrice*dataTech.cartItems[0].quantity}
+            Хочет купить: ${dataTech.cartItems.map(el=>
+                `${el.brand} - ${el.quantity} шт `
+            )}
+            Итого: ${dataTech.cartItems.reduce((acc,el)=>
+                el.finalPrice*el.quantity+acc, 0)} рублей
             `
         });
         return telegramResponse.data;

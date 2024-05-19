@@ -13,7 +13,7 @@ const FormDataSchema = z.object({
     name: z.string().nonempty('Имя не должно быть пустым.'),
     phone: z.string()
         .nonempty('Телефон не должен быть пустым.')
-        .regex(russianPhoneRegex, { message: 'Неверный формат телефона. Введите российский номер.' })
+        .regex(russianPhoneRegex, { message: 'Неверный формат телефона. Введите номер по образцу 89991234567.' })
 })
 
 
