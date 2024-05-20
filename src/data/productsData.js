@@ -3,8 +3,6 @@ const productsData = [
         id: 98,
         images: [
             "/images/products/hairConditioner3.png",
-            "/images/products/hairConditioner3.png",
-            "/images/products/hairConditioner3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Кондиционер для волоc HERBAL",
@@ -24,8 +22,6 @@ const productsData = [
         id: 99,
         images: [
             "/images/products/hairConditioner2.png",
-            "/images/products/hairConditioner2.png",
-            "/images/products/hairConditioner2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Кондиционер для волоc KERATIN",
@@ -43,8 +39,6 @@ const productsData = [
     {
         id: 100,
         images: [
-            "/images/products/hairConditionerArgan.png",
-            "/images/products/hairConditionerArgan.png",
             "/images/products/hairConditionerArgan.png",
         ],
         brand: "BANDIDO COSMETICS",
@@ -94,7 +88,7 @@ const productsData = [
         info: "Воск для волос на водной основе паутинка. Рады представить с такой уникальной формулой, которая заставляет его растягиваться до бесконечности. Воск обладает средней фиксацией.",
         category: "Средства для укладки волос",
         type: "Средства для укладки волос",
-        size: "125 мл, 150мл",
+        size: "125 мл и 150 мл",
         finalPrice: 420,
         originalPrice: 1050,
         optPrice: 378,
@@ -191,7 +185,7 @@ const productsData = [
     },{
         id: 107,
         images: [
-            "/images/products/ClassicPomade.png",
+            "/images/products/aquaWaxClassic1.png",
             "/images/products/aquaWaxClassic.png",
             "/images/products/aquaWaxClassic2.png",
 
@@ -524,8 +518,8 @@ const productsData = [
         id: 122,
         images: [
             "/images/products/oilForBeardGreen.png",
-            "/images/products/oilForBeardGreen.png",
-            "/images/products/oilForBeardGreen.png",
+            "/images/products/oilForBeardGreen2.png",
+            "/images/products/oilForBeardGreen3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Лосьон после бритья AMSTERDAM",
@@ -546,8 +540,8 @@ const productsData = [
         id: 123,
         images: [
             "/images/products/oilForBeardRed.png",
-            "/images/products/oilForBeardRed.png",
-            "/images/products/oilForBeardRed.png",
+            "/images/products/oilForBeardRed2.png",
+            "/images/products/oilForBeardRed3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Лосьон после бритья MEXICO CITY",
@@ -568,8 +562,8 @@ const productsData = [
         id: 124,
         images: [
             "/images/products/oilForBeardYellow.png",
-            "/images/products/oilForBeardYellow.png",
-            "/images/products/oilForBeardYellow.png",
+            "/images/products/oilForBeardYellow2.png",
+            "/images/products/oilForBeardYellow3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Лосьон после бритья LAS VEGAS",
@@ -593,8 +587,8 @@ const productsData = [
         heroImage: "/images/products/oilForBeardViolet.png",
         images: [
             "/images/products/oilForBeardViolet.png",
-            "/images/products/oilForBeardViolet.png",
-            "/images/products/oilForBeardViolet.png",
+            "/images/products/oilForBeardViolet2.png",
+            "/images/products/oilForBeardViolet3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Лосьон после бритья MOSCOW",
@@ -615,8 +609,8 @@ const productsData = [
         id: 126,
         images: [
             "/images/products/oilForBeardBlue.png",
-            "/images/products/oilForBeardBlue.png",
-            "/images/products/oilForBeardBlue.png",
+            "/images/products/oilForBeardBlue2.png",
+            "/images/products/oilForBeardBlue3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Лосьон после бритья BERLIN",
@@ -637,8 +631,8 @@ const productsData = [
         id: 127,
         images: [
             "/images/products/oilForBeardLemon.png",
-            "/images/products/oilForBeardLemon.png",
-            "/images/products/oilForBeardLemon.png",
+            "/images/products/oilForBeardLemon2.png",
+            "/images/products/oilForBeardLemon3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Лосьон после бритья Lemon",
