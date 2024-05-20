@@ -106,9 +106,9 @@ const productsData = [
     }, {
         id: 103,
         images: [
-            "/images/products/CreamPomade.png",
-            "/images/products/CreamPomade.png",
-            "/images/products/CreamPomade.png",
+            "/images/products/AquaWaxCream.png",
+            "/images/products/AquaWaxCream1.png",
+            "/images/products/AquaWaxCream2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "CREAM POMADE",
@@ -148,9 +148,9 @@ const productsData = [
     },{
         id: 105,
         images: [
-            "/images/products/FiberWax.png",
-            "/images/products/FiberWax.png",
-            "/images/products/FiberWax.png",
+            "/images/products/AquaWaxGreaceHeavyGold.png",
+            "/images/products/AquaWaxgGreaceHeavyGold2.png",
+            "/images/products/AquaWaxGreaceHeavyGold3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "GREASE HEAVY HOLD",
@@ -169,9 +169,9 @@ const productsData = [
     },{
         id: 106,
         images: [
-            "/images/products/FiberWax.png",
-            "/images/products/FiberWax.png",
-            "/images/products/FiberWax.png",
+            "/images/products/AquaWaxMatte.png",
+            "/images/products/AquaWaxMatte2.png",
+            "/images/products/AquaWaxMatte3.png",
         ],
 
         brand: "BANDIDO COSMETICS",
@@ -192,8 +192,9 @@ const productsData = [
         id: 107,
         images: [
             "/images/products/ClassicPomade.png",
-            "/images/products/ClassicPomade.png",
-            "/images/products/ClassicPomade.png",
+            "/images/products/aquaWaxClassic.png",
+            "/images/products/aquaWaxClassic2.png",
+
         ],
         brand: "BANDIDO COSMETICS",
         title: "CLASSIC POMADE",
@@ -222,7 +223,7 @@ const productsData = [
         info: "Воск для естественной укладки, для нормальных волос. Благодаря своей формуле помогает обеспечить плавное сцепление и легкость придания формы. В дополнение сопровождается мужским сексуальным ароматом.",
         category: "Средства для укладки волос",
         type: "Средства для укладки волос",
-        size: "150 мл",
+        size: "125 мл и 150 мл",
         finalPrice: 380,
         originalPrice: 1000,
         optPrice: 342,
@@ -235,15 +236,16 @@ const productsData = [
     {
         id: 109,
         images: [
+            "/images/products/AquaWaxBlue3.png",
+            "/images/products/AquaWaxBlue2.png",
             "/images/products/AquaWaxBlue.png",
-            "/images/products/aquaWaxBlue1.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AQUA WAX 5 BLUE",
         info: "Воск для сложных укладок. Легко наносится и придает вашим волосам желаемый результат.  Эффект естественной укладки на длительное время. Присутствует сексуальный мужской аромат.",
         category: "Средства для укладки волос",
         type: "Средства для укладки волос",
-        size: "150 мл",
+        size: "125 мл и 150 мл",
         finalPrice: 380,
         originalPrice: 1000,
         optPrice: 342,
@@ -256,15 +258,16 @@ const productsData = [
     {
         id: 110,
         images: [
+            "/images/products/AquaWaxRed3.png",
+            "/images/products/AquaWaxRed2.png",
             "/images/products/waxRed.png",
-            "/images/products/waxRed1.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AQUA WAX 7 RED",
         info: "Обладает невероятно сильной фиксацией, можно свободно сделать сложную укладку, не смотря на это легко наносится  и легко смывается. Характеризуется более жестким сцеплением с волосами, чтобы ваша прическа сохранялась дольше.",
         category: "Средства для укладки волос",
         type: "Средства для укладки волос",
-        size: "150 мл",
+        size: "125 мл и 150 мл",
         finalPrice: 380,
         originalPrice: 1000,
         optPrice: 342,
@@ -278,15 +281,16 @@ const productsData = [
         id: 111,
 
         images: [
+            "/images/products/AquaWaxBlack3.png",
+            "/images/products/AquaWaxBlack2.png",
             "/images/products/AquaWaxBlack(1).png",
-            "/images/products/Black.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AQUA WAX 8 BLACK",
         info: "Воск для жестких волос сильная фиксация. Aqua 8 Wax Extreme Strong позволяет легко укладывать густые волосы, а также поддерживать прическу более длительное  время. В дополнение обладает мужским сексуальным  ароматом.",
         category: "Средства для укладки волос",
         type: "Средства для укладки волос",
-        size: "150 мл",
+        size: "125 мл и 150 мл",
         finalPrice: 380,
         originalPrice: 1000,
         optPrice: 342,
@@ -301,6 +305,7 @@ const productsData = [
         images: [
             "/images/products/AquaWaxVioletta1.png",
             "/images/products/AquaWaxVioletta.png",
+            "/images/products/AquaWaxVioletta2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AQUA WAX 6 VIOLETTA",
