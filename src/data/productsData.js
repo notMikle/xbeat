@@ -63,9 +63,9 @@ const productsData = [
     {
         id: 101,
         images: [
-            "/images/products/MatteWax.png",
-            "/images/products/MatteWax2.png",
-            "/images/products/MatteWax2.png",
+            "/images/products/AquaWaxMatte.png",
+            "/images/products/AquaWaxMatte2.png",
+            "/images/products/AquaWaxMatte3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "MATTE WAX",
@@ -85,9 +85,9 @@ const productsData = [
     {
         id: 102,
         images: [
-            "/images/products/FiberWax.png",
-            "/images/products/FiberWax.png",
-            "/images/products/FiberWax.png",
+            "/images/products/FibarWax1.png",
+            "/images/products/FiberWax2.png",
+            "/images/products/FiberWax3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "FIBER HAIR WAX",
@@ -127,9 +127,9 @@ const productsData = [
     },{
         id: 104,
         images: [
-            "/images/products/FiberWax.png",
-            "/images/products/FiberWax.png",
-            "/images/products/FiberWax.png",
+            "/images/products/WaxDeluxe.png",
+            "/images/products/WaxDeluxe1.png",
+            "/images/products/WaxDeluxe2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "HAIR STYLING POWDER EXTRA VOLUME",
@@ -169,9 +169,9 @@ const productsData = [
     },{
         id: 106,
         images: [
-            "/images/products/AquaWaxMatte.png",
-            "/images/products/AquaWaxMatte2.png",
-            "/images/products/AquaWaxMatte3.png",
+            "/images/products/MattePomade.png",
+            "/images/products/MattePomade1.png",
+            "/images/products/MattePomade3.png",
         ],
 
         brand: "BANDIDO COSMETICS",
