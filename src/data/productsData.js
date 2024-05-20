@@ -213,9 +213,9 @@ const productsData = [
     {
         id: 108,
         images: [
-            "/images/products/AquaWaxGreen.png",
-            "/images/products/AquaWaxGreen.png",
-            "/images/products/AquaWaxGreen.png",
+            "/images/products/AquaWaxGreen1.png",
+            "/images/products/AquaWaxGreen2.png",
+            "/images/products/AquaWaxGreen3.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AQUA WAX 4 GREEN",
@@ -236,8 +236,7 @@ const productsData = [
         id: 109,
         images: [
             "/images/products/AquaWaxBlue.png",
-            "/images/products/AquaWaxBlue.png",
-            "/images/products/AquaWaxBlue.png",
+            "/images/products/aquaWaxBlue1.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AQUA WAX 5 BLUE",
@@ -258,8 +257,7 @@ const productsData = [
         id: 110,
         images: [
             "/images/products/waxRed.png",
-            "/images/products/waxRed.png",
-            "/images/products/waxRed.png",
+            "/images/products/waxRed1.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AQUA WAX 7 RED",
@@ -280,8 +278,7 @@ const productsData = [
         id: 111,
 
         images: [
-            "/images/products/AquaWaxBlack.png",
-            "/images/products/Black.png",
+            "/images/products/AquaWaxBlack(1).png",
             "/images/products/Black.png",
         ],
         brand: "BANDIDO COSMETICS",
@@ -303,7 +300,6 @@ const productsData = [
         id: 112,
         images: [
             "/images/products/AquaWaxVioletta1.png",
-            "/images/products/AquaWaxVioletta.png",
             "/images/products/AquaWaxVioletta.png",
         ],
         brand: "BANDIDO COSMETICS",
