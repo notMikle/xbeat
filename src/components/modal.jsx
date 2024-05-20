@@ -18,7 +18,6 @@ const FormDataSchema = z.object({
 
 
 export default function RhfWithAction(dataTech) {
-    console.log(dataTech)
     const [data, setData] = useState()
     const {
         register,

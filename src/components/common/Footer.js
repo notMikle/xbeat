@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { footMenu, footSocial } from '../../data/footerData';
+import sendMessage from "../actions";
+import cartItem from "../cart/CartItem";
 
 
 const Footer = () => {
 
     const [subValue, setSubValue] = useState('');
+    const [emailValue, setEmailValue] = useState('');
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setSubValue('');
-        alert('Thankyou, you are subscribed to receive our daily newsletter');
+        setEmailValue('');
+        sendMessage(subValue, emailValue)
     };
 
     const currYear = new Date().getFullYear();
@@ -36,12 +41,12 @@ const Footer = () => {
                                     onChange={(e) => setSubValue(e.target.value)}
                                 />
                                 <input
-                                    type="email"
+                                    type="text"
                                     className="input_field"
                                     placeholder="Номер телефона"
                                     required
-                                    value={subValue}
-                                    onChange={(e) => setSubValue(e.target.value)}
+                                    value={emailValue}
+                                    onChange={(e) => setEmailValue(e.target.value)}
                                 />
                                 <button type="submit" className="btn">Отправить</button>
                             </form>
@@ -80,7 +85,7 @@ const Footer = () => {
                     <div className="sub_footer_wrapper">
                         <div className="foot_copyright">
                             <p>
-                                {currYear} | Bandido Barbershop
+                                {currYear} | BANDIDO cosmetic
                             </p>
                         </div>
                         <div className="foot_social">

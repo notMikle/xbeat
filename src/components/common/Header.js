@@ -157,7 +157,7 @@ const DesktopMenu = ()=>{
             <div className="container">
                 <div className="navbar">
                     <h2 className="nav_logo">
-                        <Link to="/">Bandido Barbershop</Link>
+                        <Link to="/">BANDIDO cosmetic</Link>
                         <StyledSpan>Мужская косметика оптом</StyledSpan>
                     </h2>
                     <nav className="nav_actions">
@@ -245,6 +245,6 @@ const CallMobile = styled(Call)`
 gap: 20px;
 `
 const StyledSpan = styled.p`
-  font-size: 18px;
-  color: darkred;
+  font-size: 17px;
+  //color: darkred;
 `

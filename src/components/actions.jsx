@@ -2,8 +2,9 @@ import axios from 'axios';
 import {FormDataSchema} from "./schema";
 
 export default async function sendMessage(name, phone, dataTech) {
-    console.log(dataTech.cartItems[0].id)
+    if(dataTech)
     try {
+        debugger
         const telegramResponse = await axios.post(`https://api.telegram.org/bot7003902578:AAHZEutxZGtg0XAg7l7WE8iCkcNPlcUm-gg/sendMessage`, {
             chat_id: -1001923149371,
             parse_mode: 'html',
@@ -20,6 +21,22 @@ export default async function sendMessage(name, phone, dataTech) {
     } catch (error) {
         console.error('Error sending message:', error);
         throw new Error('Failed to send message');
+    }
+    else {
+        try {
+            const telegramResponse = await axios.post(`https://api.telegram.org/bot7003902578:AAHZEutxZGtg0XAg7l7WE8iCkcNPlcUm-gg/sendMessage`, {
+                chat_id: -1001923149371,
+                parse_mode: 'html',
+                text: `Перезвонить!
+            Имя: ${name} 
+            Телефон: ${phone}
+            `
+            });
+            return telegramResponse.data;
+        } catch (error) {
+            console.error('Error sending message:', error);
+            throw new Error('Failed to send message');
+        }
     }
 }
 
