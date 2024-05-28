@@ -121,9 +121,8 @@ const productsData = [
     },{
         id: 104,
         images: [
-            "/images/products/WaxDeluxe.png",
-            "/images/products/WaxDeluxe1.png",
-            "/images/products/WaxDeluxe2.png",
+            "/images/products/waxDeluxe3.png",
+            "/images/products/WaxDeluxe4.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "HAIR STYLING POWDER EXTRA VOLUME",
@@ -319,9 +318,7 @@ const productsData = [
     {
         id: 113,
         images: [
-            "/images/products/ShavingGelBlue.png",
-            "/images/products/ShavingGelBlue.png",
-            "/images/products/ShavingGelBlue.png",
+            "/images/products/ShavingGelBlue2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Гель для бритья BLUE",
@@ -341,9 +338,7 @@ const productsData = [
     {
         id: 114,
         images: [
-            "/images/products/ShavingGelMetallic.png",
-            "/images/products/ShavingGelMetallic.png",
-            "/images/products/ShavingGelMetallic.png",
+            "/images/products/ShavingGelMetallic2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Гель для бритья METALLIC",
@@ -363,9 +358,7 @@ const productsData = [
     {
         id: 115,
         images: [
-            "/images/products/ShavingGelGold.png",
-            "/images/products/ShavingGelGold.png",
-            "/images/products/ShavingGelGold.png",
+            "/images/products/ShavingGelGold2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Гель для бритья GOLD",
@@ -385,9 +378,7 @@ const productsData = [
     {
         id: 116,
         images: [
-            "/images/products/ShavingGelRed.png",
-            "/images/products/ShavingGelRed.png",
-            "/images/products/ShavingGelRed.png",
+            "/images/products/ShavingGelRed2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Гель для бритья RED",
@@ -407,9 +398,7 @@ const productsData = [
     {
         id: 117,
         images: [
-            "/images/products/ShavingGelPearlyGreen.png",
-            "/images/products/ShavingGelPearlyGreen.png",
-            "/images/products/ShavingGelPearlyGreen.png",
+            "/images/products/ShavingGelPearlyGreen2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Гель для бритья GREEN",
@@ -429,9 +418,7 @@ const productsData = [
     {
         id: 118,
         images: [
-            "/images/products/AfterShaveColombia.png",
-            "/images/products/AfterShaveColombia.png",
-            "/images/products/AfterShaveColombia.png",
+            "/images/products/AfterShaveColombia2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AFTER SHAVE CREAM COLOGNE COLOMBIA",
@@ -451,9 +438,7 @@ const productsData = [
     {
         id: 119,
         images: [
-            "/images/products/AfterShaveIstanbul.png",
-            "/images/products/AfterShaveIstanbul.png",
-            "/images/products/AfterShaveIstanbul.png",
+            "/images/products/AfterShaveIstanbul2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AFTER SHAVE CREAM COLOGNE ISTANBUL",
@@ -473,9 +458,7 @@ const productsData = [
     {
         id: 120,
         images: [
-            "/images/products/AfterShaveNewYork.png",
-            "/images/products/AfterShaveNewYork.png",
-            "/images/products/AfterShaveNewYork.png",
+            "/images/products/AfterShaveNewYork2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AFTER SHAVE CREAM COLOGNE NEW YORK",
@@ -495,9 +478,7 @@ const productsData = [
     {
         id: 121,
         images: [
-            "/images/products/AfterShaveLondon.png",
-            "/images/products/AfterShaveLondon.png",
-            "/images/products/AfterShaveLondon.png",
+            "/images/products/AfterShaveLondon2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "AFTER SHAVE CREAM COLOGNE LONDON",
@@ -652,9 +633,7 @@ const productsData = [
     {
         id: 128,
         images: [
-            "/images/products/BeardOilBlack.png",
-            "/images/products/BeardOilBlack.png",
-            "/images/products/BeardOilBlack.png",
+            "/images/products/BeardOilBlack2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Масло для бороды BLACK",
@@ -674,9 +653,7 @@ const productsData = [
     {
         id: 129,
         images: [
-            "/images/products/BeardOilRoseGold.png",
-            "/images/products/BeardOilRoseGold.png",
-            "/images/products/BeardOilRoseGold.png",
+            "/images/products/BeardOilRoseGold2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Масло для бороды ROSE GOLD",
@@ -696,9 +673,7 @@ const productsData = [
     {
         id: 130,
         images: [
-            "/images/products/BeardOilGold.png",
-            "/images/products/BeardOilGold.png",
-            "/images/products/BeardOilGold.png",
+            "/images/products/BeardOilGold2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Масло для бороды GOLD",
@@ -718,9 +693,7 @@ const productsData = [
     {
         id: 131,
         images: [
-            "/images/products/BeardOilSilver.png",
-            "/images/products/BeardOilSilver.png",
-            "/images/products/BeardOilSilver.png",
+            "/images/products/BeardOilSilver2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Масло для бороды SILVER",
@@ -788,8 +761,6 @@ const productsData = [
     {
         id: 134,
         images: [
-            "/images/products/beardShampoo.png",
-            "/images/products/beardShampoo.png",
             "/images/products/beardShampoo.png",
         ],
         brand: "BANDIDO COSMETICS",
@@ -894,9 +865,7 @@ const productsData = [
     {
         id: 139,
         images: [
-            "/images/products/hairTonic.png",
-            "/images/products/hairTonic.png",
-            "/images/products/hairTonic.png",
+            "/images/products/hairTonic2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "HAIR TONIC",
@@ -914,9 +883,7 @@ const productsData = [
     {
         id: 140,
         images: [
-            "/images/products/toniccGrooming.png",
-            "/images/products/toniccGrooming.png",
-            "/images/products/toniccGrooming.png",
+            "/images/products/toniccGrooming2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "TONIC GROOMING",
@@ -934,9 +901,7 @@ const productsData = [
     {
         id: 141,
         images: [
-            "/images/products/SeaSalt.jpg",
-            "/images/products/SeaSalt.jpg",
-            "/images/products/SeaSalt.jpg",
+            "/images/products/SeaSalt2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "SEA SALT",
@@ -954,9 +919,7 @@ const productsData = [
     {
         id: 142,
         images: [
-            "/images/products/barberPowder.png",
-            "/images/products/barberPowder.png",
-            "/images/products/barberPowder.png",
+            "/images/products/barberPowder2.png",
         ],
         brand: "BANDIDO COSMETICS",
         title: "Абсорбирующий тальк",
