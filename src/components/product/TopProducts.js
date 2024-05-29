@@ -15,6 +15,7 @@ const TopProducts = () => {
     // }
 
     const [products, setProducts] = useState(sessionStorage.getItem('category')? sessionStorage.getItem('category')==='Показать все'?productsData:productsData.filter(item => item.category === sessionStorage.getItem('category')):productsData);
+
     const { activeClass, handleActive } = useActive(sessionStorage.getItem('i')?Number(sessionStorage.getItem('i')):0);
     // making a unique set of product's category
     const productsCategory = [
