@@ -7,10 +7,15 @@ import ProductCard from './ProductCard';
 
 
 const TopProducts = () => {
+    // if(sessionStorage.getItem('category')){
+    //     if (sessionStorage.getItem('category')==='Показать все') {
+    //         // productsData = productsData.filter(item=>item)
+    //     }
+    //     else {productsData = productsData.filter(item => item.category === sessionStorage.getItem('category'))}
+    // }
 
-    const [products, setProducts] = useState(productsData);
-    const { activeClass, handleActive } = useActive(0);
-
+    const [products, setProducts] = useState(sessionStorage.getItem('category')? sessionStorage.getItem('category')==='Показать все'?productsData:productsData.filter(item => item.category === sessionStorage.getItem('category')):productsData);
+    const { activeClass, handleActive } = useActive(sessionStorage.getItem('i')?Number(sessionStorage.getItem('i')):0);
     // making a unique set of product's category
     const productsCategory = [
         'Показать все',
@@ -19,13 +24,14 @@ const TopProducts = () => {
 
     // handling product's filtering
     const handleProducts = (category, i) => {
-        if (category === 'Показать все') {
+        let cat = sessionStorage.getItem('category')
+        if (cat === 'Показать все') {
             setProducts(productsData);
             handleActive(i);
             return;
         }
 
-        const filteredProducts = productsData.filter(item => item.category === category);
+        const filteredProducts = productsData.filter(item => item.category === cat);
         setProducts(filteredProducts);
         handleActive(i);
     };
@@ -40,7 +46,11 @@ const TopProducts = () => {
                             <li
                                 key={i}
                                 className={`tabs_item ${activeClass(i)}`}
-                                onClick={() => handleProducts(item, i)}
+                                onClick={() => {
+                                    sessionStorage.setItem('category', item)
+                                    sessionStorage.setItem('i', i)
+                                    handleProducts(item, i)
+                                }}
                             >
                                 {item}
                             </li>
