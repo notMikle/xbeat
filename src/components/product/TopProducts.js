@@ -23,7 +23,6 @@ const TopProducts = () => {
         ...new Set(productsData.map(item => item.category))
     ];
 
-    // handling product's filtering
     const handleProducts = (category, i) => {
         let cat = sessionStorage.getItem('category')
         if (cat === 'Показать все') {
